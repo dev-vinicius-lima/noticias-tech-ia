@@ -1,5 +1,10 @@
 import "dotenv/config"
 import RSSParser from "rss-parser"
+import { readFileSync, existsSync, writeFileSync } from "fs"
+import { resolve } from "path"
+
+const HISTORICO_PATH = resolve("history.json")
+const MAX_HISTORICO = 500
 
 type Category = "IA & LLMs" | "Segurança" | "Web & Backend" | "Mobile"
 
@@ -85,7 +90,7 @@ async function buscarFonte(fonte: (typeof FONTES)[0], parser: RSSParser) {
   }
 }
 
-async function buscarTodasAsNoticias() {
+async function buscarTodasAsNoticias(linksEnviados: Set<string>) {
   const parser = new RSSParser({
     timeout: 10000,
     headers: { "User-Agent": "TechBriefingBot/1.0" },
@@ -101,6 +106,7 @@ async function buscarTodasAsNoticias() {
   for (const resultado of resultados) {
     if (resultado.status !== "fulfilled") continue
     for (const noticia of resultado.value) {
+      if (linksEnviados.has(noticia.link)) continue
       const chave = noticia.titulo.toLowerCase().slice(0, 60)
       if (titulosVistos.has(chave)) continue
       titulosVistos.add(chave)
@@ -109,7 +115,7 @@ async function buscarTodasAsNoticias() {
   }
 
   console.log(
-    `✅ ${noticias.length} notícias coletadas de ${FONTES.length} fontes`,
+    `✅ ${noticias.length} notícias inéditas de ${FONTES.length} fontes (${linksEnviados.size} no histórico)`,
   )
   return noticias
 }
@@ -291,7 +297,7 @@ async function enviarDiscord(payload: {
 
   if (!DISCORD_WEBHOOK_URL) {
     console.warn("⚠️ DISCORD_WEBHOOK_URL não configurado — pulando Discord")
-    return
+    return false
   }
 
   const resposta = await fetch(DISCORD_WEBHOOK_URL, {
@@ -305,12 +311,59 @@ async function enviarDiscord(payload: {
       `Erro ao enviar Discord: ${resposta.status} ${await resposta.text()}`,
     )
   console.log("✅ Mensagem enviada no Discord com sucesso")
+  return true
+}
+
+function extrairLinksDoPayload(payload: {
+  content: string
+  embeds: { description: string }[]
+}): string[] {
+  const links: string[] = []
+  const regex = /<(.+?)>/g
+  for (const embed of payload.embeds) {
+    let match: RegExpExecArray | null
+    while ((match = regex.exec(embed.description)) !== null) {
+      links.push(match[1])
+    }
+  }
+  return links
+}
+
+function carregarHistorico(): Set<string> {
+  try {
+    if (!existsSync(HISTORICO_PATH)) return new Set()
+    const raw = readFileSync(HISTORICO_PATH, "utf-8")
+    const data = JSON.parse(raw) as { links: string[] }
+    return new Set(data.links ?? [])
+  } catch {
+    console.warn("⚠️  Erro ao ler histórico, iniciando vazio")
+    return new Set()
+  }
+}
+
+function salvarHistorico(links: string[]) {
+  const existentes = carregarHistorico()
+  for (const link of links) existentes.add(link)
+  const todos = [...existentes].slice(-MAX_HISTORICO)
+  writeFileSync(HISTORICO_PATH, JSON.stringify({ links: todos }, null, 2))
+  console.log(`💾 Histórico atualizado: ${todos.length} links`)
+
+  if (process.env.GITHUB_ACTIONS === "true") {
+    console.log("📎 history.json salvo — GitHub Action fará o commit")
+  }
 }
 
 async function executar() {
   console.log("🚀 Iniciando Tech Briefing...\n")
 
-  const noticias = await buscarTodasAsNoticias()
+  const historico = carregarHistorico()
+  const noticias = await buscarTodasAsNoticias(historico)
+
+  if (noticias.length === 0) {
+    console.log("\n✅ Nenhuma notícia nova hoje — nada a enviar")
+    return
+  }
+
   const jsonDaIA = await filtrarComIA(noticias)
   const discordPayload = montarEmbedsDiscord(jsonDaIA)
 
@@ -322,7 +375,12 @@ async function executar() {
     return
   }
 
-  await enviarDiscord(discordPayload)
+  const enviado = await enviarDiscord(discordPayload)
+
+  if (enviado) {
+    const linksDasNoticias = extrairLinksDoPayload(discordPayload)
+    salvarHistorico(linksDasNoticias)
+  }
 }
 
 executar().catch((erro) => {
