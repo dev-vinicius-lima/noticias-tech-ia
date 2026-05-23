@@ -17,14 +17,14 @@ const FONTES = [
     nome: "Hacker News – IA",
   },
   {
-    url: "https://www.reddit.com/r/MachineLearning/top/.rss?t=day&limit=10",
+    url: "https://dev.to/feed/tag/artificial-intelligence",
     categoria: "IA & LLMs" as Category,
-    nome: "Reddit ML",
+    nome: "Dev.to – IA",
   },
   {
-    url: "https://www.reddit.com/r/LocalLLaMA/top/.rss?t=day&limit=10",
+    url: "https://dev.to/feed/tag/machine-learning",
     categoria: "IA & LLMs" as Category,
-    nome: "Reddit LocalLLaMA",
+    nome: "Dev.to – ML",
   },
   {
     url: "https://feeds.feedburner.com/TheHackersNews",
@@ -32,9 +32,9 @@ const FONTES = [
     nome: "The Hacker News",
   },
   {
-    url: "https://www.reddit.com/r/netsec/top/.rss?t=day&limit=10",
+    url: "https://dev.to/feed/tag/security",
     categoria: "Segurança" as Category,
-    nome: "Reddit netsec",
+    nome: "Dev.to – Security",
   },
   {
     url: "https://hnrss.org/frontpage?q=NestJS+Node+TypeScript+API&count=10",
@@ -42,9 +42,9 @@ const FONTES = [
     nome: "Hacker News – Web",
   },
   {
-    url: "https://www.reddit.com/r/webdev/top/.rss?t=day&limit=10",
+    url: "https://dev.to/feed/tag/javascript",
     categoria: "Web & Backend" as Category,
-    nome: "Reddit webdev",
+    nome: "Dev.to – JavaScript",
   },
   {
     url: "https://dev.to/feed/tag/node",
@@ -57,9 +57,9 @@ const FONTES = [
     nome: "Dev.to – TypeScript",
   },
   {
-    url: "https://www.reddit.com/r/reactnative/top/.rss?t=day&limit=10",
+    url: "https://dev.to/feed/tag/react-native",
     categoria: "Mobile" as Category,
-    nome: "Reddit React Native",
+    nome: "Dev.to – React Native",
   },
   {
     url: "https://dev.to/feed/tag/expo",
