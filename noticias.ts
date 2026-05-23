@@ -132,8 +132,70 @@ const MODELOS_IA = [
   "baidu/cobuddy:free",
 ]
 
+function isSabado(): boolean {
+  return new Date().getDay() === 6
+}
+
+function montarInstrucoesIA(
+  noticiasPorCategoria: string,
+  hoje: string,
+  semanal: boolean,
+): string {
+  if (semanal) {
+    return `Você é um curador de notícias tech para um desenvolvedor fullstack e pentester brasileiro.
+
+Hoje é ${hoje}, sábado — hora do resumo semanal! Abaixo estão as notícias do dia. Sua tarefa:
+
+1. Escolha os 5 destaques MAIS IMPORTANTES da semana (independente de categoria)
+2. Para cada um, escreva um parágrafo curto em português explicando por que importa (2-3 frases)
+3. Preserve o link original sem alterar
+4. Priorize: lançamentos, vulnerabilidades críticas, mudanças de API, benchmarks
+
+Responda SOMENTE com JSON puro, sem blocos de código:
+{
+  "categorias": [
+    {
+      "nome": "📆 Destaques da Semana",
+      "noticias": [
+        { "resumo": "parágrafo explicando o destaque", "link": "url original" }
+      ]
+    }
+  ]
+}
+
+NOTÍCIAS DO DIA:
+${noticiasPorCategoria}`
+  }
+
+  return `Você é um curador de notícias tech para um desenvolvedor fullstack e pentester brasileiro.
+
+Hoje é ${hoje}. Abaixo estão notícias coletadas de vários sites. Sua tarefa:
+
+1. Escolha as 2-3 mais relevantes e impactantes de CADA categoria
+2. Escreva um parágrafo curto em português explicando por que importa (1-2 frases)
+3. Preserve o link original sem alterar
+4. Priorize: lançamentos, vulnerabilidades críticas, mudanças de API, benchmarks
+5. Descarte: tutoriais básicos, opiniões genéricas, anúncios de marketing
+
+Responda SOMENTE com JSON puro, sem blocos de código:
+{
+  "categorias": [
+    {
+      "nome": "IA & LLMs",
+      "noticias": [
+        { "resumo": "parágrafo curto", "link": "url original" }
+      ]
+    }
+  ]
+}
+
+NOTÍCIAS DO DIA:
+${noticiasPorCategoria}`
+}
+
 async function filtrarComIA(
   noticias: { titulo: string; link: string; categoria: Category }[],
+  semanal: boolean,
 ) {
   const hoje = new Date().toLocaleDateString("pt-BR", {
     day: "2-digit",
@@ -155,31 +217,7 @@ async function filtrarComIA(
     .filter(Boolean)
     .join("\n\n")
 
-  const instrucoes = `Você é um curador de notícias tech para um desenvolvedor fullstack e pentester brasileiro.
-
-Hoje é ${hoje}. Abaixo estão notícias coletadas de vários sites. Sua tarefa:
-
-1. Escolha as 2-3 mais relevantes e impactantes de CADA categoria
-2. Escreva um resumo em português de no máximo 1 linha (máx 80 caracteres) para cada uma
-3. Preserve o link original sem alterar
-4. Priorize: lançamentos, vulnerabilidades críticas, mudanças de API, benchmarks
-5. Descarte: tutoriais básicos, opiniões genéricas, anúncios de marketing
-
-Responda SOMENTE com JSON puro, sem blocos de código, sem explicações:
-{
-  "categorias": [
-    {
-      "nome": "IA & LLMs",
-      "noticias": [
-        { "resumo": "texto curto em pt-BR", "link": "url original" }
-      ]
-    }
-  ]
-}
-
-NOTÍCIAS DO DIA:
-${noticiasPorCategoria}`
-
+  const instrucoes = montarInstrucoesIA(noticiasPorCategoria, hoje, semanal)
   const erros: string[] = []
 
   for (const modelo of MODELOS_IA) {
@@ -241,6 +279,7 @@ function montarEmbedsDiscord(jsonDaIA: string) {
     month: "2-digit",
   })
   const dataFormatada = hoje.charAt(0).toUpperCase() + hoje.slice(1)
+  const ehSemanal = isSabado()
 
   const embeds: {
     title: string
@@ -248,7 +287,7 @@ function montarEmbedsDiscord(jsonDaIA: string) {
     color: number
   }[] = []
 
-  const CORES: Record<Category, number> = {
+  const CORES: Record<string, number> = {
     "IA & LLMs": 0x5865f2,
     Segurança: 0xed4245,
     "Web & Backend": 0x57f287,
@@ -258,21 +297,20 @@ function montarEmbedsDiscord(jsonDaIA: string) {
   try {
     const dados = JSON.parse(jsonDaIA) as {
       categorias: {
-        nome: Category
+        nome: string
         noticias: { resumo: string; link: string }[]
       }[]
     }
 
     for (const categoria of dados.categorias) {
       if (!categoria.noticias?.length) continue
-      const emoji = EMOJI_POR_CATEGORIA[categoria.nome] ?? "•"
       const linhas = categoria.noticias
-        .map((n) => `› ${n.resumo}\n<${n.link}>`)
-        .join("\n")
+        .map((n) => `${n.resumo}\n<${n.link}>`)
+        .join("\n\n")
       embeds.push({
-        title: `${emoji} ${categoria.nome}`,
+        title: ehSemanal ? "📆 Destaques da Semana" : categoria.nome,
         description: linhas,
-        color: CORES[categoria.nome] ?? 0x2f3136,
+        color: ehSemanal ? 0x9b59b6 : (CORES[categoria.nome] ?? 0x2f3136),
       })
     }
   } catch {
@@ -312,6 +350,30 @@ async function enviarDiscord(payload: {
     )
   console.log("✅ Mensagem enviada no Discord com sucesso")
   return true
+}
+
+async function enviarAlertaDiscord(erro: string) {
+  const { DISCORD_WEBHOOK_URL } = process.env
+  if (!DISCORD_WEBHOOK_URL) return
+
+  try {
+    await fetch(DISCORD_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        content: "🚨 **Tech Briefing — Falha na execução**",
+        embeds: [
+          {
+            title: "❌ Erro",
+            description: `\`\`\`\n${erro.slice(0, 2000)}\n\`\`\``,
+            color: 0xed4245,
+          },
+        ],
+      }),
+    })
+  } catch {
+    // silêncio — não podemos fazer nada se o alerta falhar
+  }
 }
 
 function extrairLinksDoPayload(payload: {
@@ -358,16 +420,17 @@ async function executar() {
 
   const historico = carregarHistorico()
   const noticias = await buscarTodasAsNoticias(historico)
+  const semanal = isSabado()
 
   if (noticias.length === 0) {
     console.log("\n✅ Nenhuma notícia nova hoje — nada a enviar")
     return
   }
 
-  const jsonDaIA = await filtrarComIA(noticias)
+  const jsonDaIA = await filtrarComIA(noticias, semanal)
   const discordPayload = montarEmbedsDiscord(jsonDaIA)
 
-  console.log("\n📋 Preview dos embeds do Discord:\n")
+  console.log(`\n📋 Preview (${semanal ? "semanal" : "diário"}):\n`)
   console.log(JSON.stringify(discordPayload, null, 2))
 
   if (process.env.DRY_RUN === "true") {
@@ -383,7 +446,8 @@ async function executar() {
   }
 }
 
-executar().catch((erro) => {
+executar().catch(async (erro) => {
   console.error("❌ Falha na execução:", erro)
+  await enviarAlertaDiscord(String(erro))
   process.exit(1)
 })
