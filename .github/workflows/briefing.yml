@@ -21,7 +21,7 @@ jobs:
 
       - run: npm ci
 
-      - run: npx tsx noticias.ts
+      - run: npx tsx src/index.ts
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
@@ -31,6 +31,6 @@ jobs:
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add history.json config.json
+          git add data/history.json data/config.json
           git diff --staged --quiet || git commit -m "chore: atualiza history.json"
           git push

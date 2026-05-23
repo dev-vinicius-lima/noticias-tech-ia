@@ -2,7 +2,7 @@
   "name": "tech-briefing",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsx src/briefing.ts"
+    "start": "tsx src/index.ts"
   },
   "dependencies": {
     "dotenv": "^16.4.5",
