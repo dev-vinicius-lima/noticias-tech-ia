@@ -96,18 +96,35 @@ function montarInstrucoesIA(
   noticiasPorCategoria: string,
   hoje: string,
   semanal: boolean,
-): string {
+): { system: string; messages: { role: string; content: string }[] } {
+  const system = `Você é um curador de notícias tech especializado em tecnologia para desenvolvedores brasileiros. Você é PRECISO, CONCISO e NUNCA inventa fatos. Se não tem certeza, omite.`
+
+  const exemplos = `EXEMPLO DE SAÍDA CORRETA:
+{
+  "categorias": [
+    {
+      "nome": "Segurança",
+      "noticias": [
+        {
+          "resumo": "npm agora exige 2FA para publicar e instalar pacotes, bloqueando ataques de supply chain que dependem de credenciais roubadas.",
+          "link": "https://example.com/npm-2fa"
+        }
+      ]
+    }
+  ]
+}`
+
   if (semanal) {
-    return `Você é um curador de notícias tech para um desenvolvedor fullstack e pentester brasileiro.
+    const prompt = `Hoje é ${hoje}, sábado — resumo semanal! Abaixo estão notícias do dia.
 
-Hoje é ${hoje}, sábado — hora do resumo semanal! Abaixo estão as notícias do dia. Sua tarefa:
-
+INSTRUÇÕES:
 1. Escolha os 5 destaques MAIS IMPORTANTES da semana (independente de categoria)
-2. Para cada um, escreva um parágrafo curto em português explicando por que importa (2-3 frases)
+2. Cada resumo: 2-3 frases em português, mencione números/versões quando existirem
 3. Preserve o link original sem alterar
 4. Priorize: lançamentos, vulnerabilidades críticas, mudanças de API, benchmarks
+5. REGRA DE OURO: NUNCA invente informações. Se o título não diz o suficiente, seja conservador no resumo.
 
-Responda SOMENTE com JSON puro, sem blocos de código:
+FORMATO DE SAÍDA (JSON puro, sem \`\`\`):
 {
   "categorias": [
     {
@@ -119,38 +136,47 @@ Responda SOMENTE com JSON puro, sem blocos de código:
   ]
 }
 
+${exemplos}
+
 NOTÍCIAS DO DIA:
 ${noticiasPorCategoria}`
+
+    return { system, messages: [{ role: "user", content: prompt }] }
   }
 
-  return `Você é um curador de notícias tech para um desenvolvedor fullstack e pentester brasileiro.
+  const prompt = `Hoje é ${hoje}. Abaixo estão notícias coletadas de vários sites.
 
-Hoje é ${hoje}. Abaixo estão notícias coletadas de vários sites. Sua tarefa:
-
+INSTRUÇÕES:
 1. Escolha as 2-3 mais relevantes e impactantes de CADA categoria
-2. Escreva um parágrafo curto em português explicando por que importa (1-2 frases)
+2. Cada resumo: 1-2 frases em português, mencione números/versões quando existirem
 3. Preserve o link original sem alterar
 4. Priorize: lançamentos, vulnerabilidades críticas, mudanças de API, benchmarks
 5. Descarte: tutoriais básicos, opiniões genéricas, anúncios de marketing
+6. REGRA DE OURO: NUNCA invente informações. Se o título não diz o suficiente, seja conservador.
 
-Responda SOMENTE com JSON puro, sem blocos de código:
+FORMATO DE SAÍDA (JSON puro, sem \`\`\`):
 {
   "categorias": [
     {
       "nome": "IA & LLMs",
       "noticias": [
-        { "resumo": "parágrafo curto", "link": "url original" }
+        { "resumo": "parágrafo curto com dados concretos", "link": "url original" }
       ]
     }
   ]
 }
 
+${exemplos}
+
 NOTÍCIAS DO DIA:
 ${noticiasPorCategoria}`
+
+  return { system, messages: [{ role: "user", content: prompt }] }
 }
 
 async function consultarIA(
-  instrucoes: string,
+  system: string,
+  messages: { role: string; content: string }[],
 ): Promise<{ texto: string; modelo: string }> {
   const erros: string[] = []
 
@@ -168,8 +194,11 @@ async function consultarIA(
           },
           body: JSON.stringify({
             model: modelo,
-            messages: [{ role: "user", content: instrucoes }],
-            temperature: 0.3,
+            messages: [
+              { role: "system", content: system },
+              ...messages,
+            ],
+            temperature: 0.1,
           }),
         },
       )
@@ -228,8 +257,8 @@ async function filtrarComIA(
     .filter(Boolean)
     .join("\n\n")
 
-  const instrucoes = montarInstrucoesIA(noticiasPorCategoria, hoje, semanal)
-  const { texto } = await consultarIA(instrucoes)
+  const { system, messages } = montarInstrucoesIA(noticiasPorCategoria, hoje, semanal)
+  const { texto } = await consultarIA(system, messages)
   return texto
 }
 

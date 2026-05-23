@@ -17,14 +17,14 @@
       "nome": "Dev.to – IA"
     },
     {
-      "url": "https://dev.to/feed/tag/machine-learning",
-      "categoria": "IA & LLMs",
-      "nome": "Dev.to – ML"
-    },
-    {
       "url": "https://feeds.feedburner.com/TheHackersNews",
       "categoria": "Segurança",
       "nome": "The Hacker News"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "categoria": "Segurança",
+      "nome": "BleepingComputer"
     },
     {
       "url": "https://dev.to/feed/tag/security",
@@ -52,6 +52,26 @@
       "nome": "Dev.to – TypeScript"
     },
     {
+      "url": "https://www.infoq.com/feed/",
+      "categoria": "Web & Backend",
+      "nome": "InfoQ"
+    },
+    {
+      "url": "https://blog.rust-lang.org/feed.xml",
+      "categoria": "Web & Backend",
+      "nome": "Rust Blog"
+    },
+    {
+      "url": "https://aws.amazon.com/blogs/aws/feed/",
+      "categoria": "Web & Backend",
+      "nome": "AWS Blog"
+    },
+    {
+      "url": "https://dev.to/feed/tag/react",
+      "categoria": "Web & Backend",
+      "nome": "Dev.to – React"
+    },
+    {
       "url": "https://dev.to/feed/tag/react-native",
       "categoria": "Mobile",
       "nome": "Dev.to – React Native"
@@ -77,6 +97,10 @@
     {
       "url": "https://feeds.feedburner.com/TheHackersNews",
       "nome": "The Hacker News"
+    },
+    {
+      "url": "https://www.bleepingcomputer.com/feed/",
+      "nome": "BleepingComputer"
     }
   ],
   "palavras_chave_urgentes": [
