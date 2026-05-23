@@ -3,89 +3,57 @@ import RSSParser from "rss-parser"
 import { readFileSync, existsSync, writeFileSync } from "fs"
 import { resolve } from "path"
 
+const CONFIG_PATH = resolve("config.json")
 const HISTORICO_PATH = resolve("history.json")
 const MAX_HISTORICO = 500
 
-type Category = "IA & LLMs" | "Segurança" | "Web & Backend" | "Mobile"
+type Category = string
 
-const EMOJI_POR_CATEGORIA: Record<Category, string> = {
-  "IA & LLMs": "🤖",
-  Segurança: "🔐",
-  "Web & Backend": "🌐",
-  Mobile: "📱",
+interface Config {
+  categorias: Record<string, { emoji: string; cor: string }>
+  fontes: { url: string; categoria: string; nome: string }[]
+  modelos: string[]
+  fontes_urgentes: { url: string; nome: string }[]
+  palavras_chave_urgentes: string[]
 }
 
-const FONTES = [
-  {
-    url: "https://hnrss.org/frontpage?q=AI+LLM+GPT+Claude+Gemini&count=15",
-    categoria: "IA & LLMs" as Category,
-    nome: "Hacker News – IA",
-  },
-  {
-    url: "https://dev.to/feed/tag/artificial-intelligence",
-    categoria: "IA & LLMs" as Category,
-    nome: "Dev.to – IA",
-  },
-  {
-    url: "https://dev.to/feed/tag/machine-learning",
-    categoria: "IA & LLMs" as Category,
-    nome: "Dev.to – ML",
-  },
-  {
-    url: "https://feeds.feedburner.com/TheHackersNews",
-    categoria: "Segurança" as Category,
-    nome: "The Hacker News",
-  },
-  {
-    url: "https://dev.to/feed/tag/security",
-    categoria: "Segurança" as Category,
-    nome: "Dev.to – Security",
-  },
-  {
-    url: "https://hnrss.org/frontpage?q=NestJS+Node+TypeScript+API&count=10",
-    categoria: "Web & Backend" as Category,
-    nome: "Hacker News – Web",
-  },
-  {
-    url: "https://dev.to/feed/tag/javascript",
-    categoria: "Web & Backend" as Category,
-    nome: "Dev.to – JavaScript",
-  },
-  {
-    url: "https://dev.to/feed/tag/node",
-    categoria: "Web & Backend" as Category,
-    nome: "Dev.to – Node",
-  },
-  {
-    url: "https://dev.to/feed/tag/typescript",
-    categoria: "Web & Backend" as Category,
-    nome: "Dev.to – TypeScript",
-  },
-  {
-    url: "https://dev.to/feed/tag/react-native",
-    categoria: "Mobile" as Category,
-    nome: "Dev.to – React Native",
-  },
-  {
-    url: "https://dev.to/feed/tag/expo",
-    categoria: "Mobile" as Category,
-    nome: "Dev.to – Expo",
-  },
-]
+const config: Config = JSON.parse(readFileSync(CONFIG_PATH, "utf-8"))
 
-async function buscarFonte(fonte: (typeof FONTES)[0], parser: RSSParser) {
+function hexToInt(hex: string): number {
+  return parseInt(hex.replace("#", ""), 16)
+}
+
+const CORES: Record<string, number> = {}
+for (const [cat, val] of Object.entries(config.categorias)) {
+  CORES[cat] = hexToInt(val.cor)
+}
+
+const EMOJI_POR_CATEGORIA: Record<string, string> = {}
+for (const [cat, val] of Object.entries(config.categorias)) {
+  EMOJI_POR_CATEGORIA[cat] = val.emoji
+}
+
+const CATEGORIAS = Object.keys(config.categorias)
+
+async function buscarFonte(
+  url: string,
+  nome: string,
+  categoria: string | null,
+  parser: RSSParser,
+  limite = 8,
+) {
   try {
-    const feed = await parser.parseURL(fonte.url)
+    const feed = await parser.parseURL(url)
     return (feed.items ?? [])
-      .slice(0, 8)
+      .slice(0, limite)
       .map((item) => ({
         titulo: item.title?.replace(/\s+/g, " ").trim() ?? "",
         link: item.link ?? item.guid ?? "",
-        categoria: fonte.categoria,
+        categoria,
       }))
-      .filter((noticia) => noticia.titulo && noticia.link)
+      .filter((n) => n.titulo && n.link)
   } catch {
-    console.warn(`⚠️  Site indisponível: ${fonte.nome}`)
+    console.warn(`⚠️  Site indisponível: ${nome}`)
     return []
   }
 }
@@ -97,10 +65,10 @@ async function buscarTodasAsNoticias(linksEnviados: Set<string>) {
   })
 
   const resultados = await Promise.allSettled(
-    FONTES.map((f) => buscarFonte(f, parser)),
+    config.fontes.map((f) => buscarFonte(f.url, f.nome, f.categoria, parser)),
   )
 
-  const noticias: { titulo: string; link: string; categoria: Category }[] = []
+  const noticias: { titulo: string; link: string; categoria: string }[] = []
   const titulosVistos = new Set<string>()
 
   for (const resultado of resultados) {
@@ -115,22 +83,10 @@ async function buscarTodasAsNoticias(linksEnviados: Set<string>) {
   }
 
   console.log(
-    `✅ ${noticias.length} notícias inéditas de ${FONTES.length} fontes (${linksEnviados.size} no histórico)`,
+    `✅ ${noticias.length} notícias inéditas de ${config.fontes.length} fontes (${linksEnviados.size} no histórico)`,
   )
   return noticias
 }
-
-const MODELOS_IA = [
-  "openai/gpt-oss-120b:free",
-  "google/gemma-4-26b-a4b-it:free",
-  "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
-  "z-ai/glm-4.5-air:free",
-  "arcee-ai/trinity-large-thinking:free",
-  "poolside/laguna-xs.2:free",
-  "liquid/lfm-2.5-1.2b-instruct:free",
-  "nvidia/nemotron-3-super-120b-a12b:free",
-  "baidu/cobuddy:free",
-]
 
 function isSabado(): boolean {
   return new Date().getDay() === 6
@@ -193,34 +149,12 @@ NOTÍCIAS DO DIA:
 ${noticiasPorCategoria}`
 }
 
-async function filtrarComIA(
-  noticias: { titulo: string; link: string; categoria: Category }[],
-  semanal: boolean,
-) {
-  const hoje = new Date().toLocaleDateString("pt-BR", {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  })
-
-  const noticiasPorCategoria = (
-    ["IA & LLMs", "Segurança", "Web & Backend", "Mobile"] as Category[]
-  )
-    .map((cat) => {
-      const dessa = noticias.filter((n) => n.categoria === cat)
-      if (!dessa.length) return ""
-      const linhas = dessa
-        .map((n, i) => `${i + 1}. ${n.titulo} — ${n.link}`)
-        .join("\n")
-      return `### ${cat}\n${linhas}`
-    })
-    .filter(Boolean)
-    .join("\n\n")
-
-  const instrucoes = montarInstrucoesIA(noticiasPorCategoria, hoje, semanal)
+async function consultarIA(
+  instrucoes: string,
+): Promise<{ texto: string; modelo: string }> {
   const erros: string[] = []
 
-  for (const modelo of MODELOS_IA) {
+  for (const modelo of config.modelos) {
     console.log(`  🤖 Tentando modelo: ${modelo}`)
     try {
       const resposta = await fetch(
@@ -260,7 +194,7 @@ async function filtrarComIA(
       const resultado = textobruto.replace(/```json|```/g, "").trim()
 
       console.log(`  ✅  Modelo ${modelo} respondeu com sucesso`)
-      return resultado
+      return { texto: resultado, modelo }
     } catch (err) {
       console.warn(`  💥  Erro de rede, pulando...`)
       erros.push(`${modelo}: ${String(err)}`)
@@ -270,6 +204,33 @@ async function filtrarComIA(
   throw new Error(
     `Todos os modelos falharam:\n${erros.map((e) => `  • ${e}`).join("\n")}`,
   )
+}
+
+async function filtrarComIA(
+  noticias: { titulo: string; link: string; categoria: string }[],
+  semanal: boolean,
+) {
+  const hoje = new Date().toLocaleDateString("pt-BR", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  })
+
+  const noticiasPorCategoria = CATEGORIAS
+    .map((cat) => {
+      const dessa = noticias.filter((n) => n.categoria === cat)
+      if (!dessa.length) return ""
+      const linhas = dessa
+        .map((n, i) => `${i + 1}. ${n.titulo} — ${n.link}`)
+        .join("\n")
+      return `### ${cat}\n${linhas}`
+    })
+    .filter(Boolean)
+    .join("\n\n")
+
+  const instrucoes = montarInstrucoesIA(noticiasPorCategoria, hoje, semanal)
+  const { texto } = await consultarIA(instrucoes)
+  return texto
 }
 
 function montarEmbedsDiscord(jsonDaIA: string) {
@@ -286,13 +247,6 @@ function montarEmbedsDiscord(jsonDaIA: string) {
     description: string
     color: number
   }[] = []
-
-  const CORES: Record<string, number> = {
-    "IA & LLMs": 0x5865f2,
-    Segurança: 0xed4245,
-    "Web & Backend": 0x57f287,
-    Mobile: 0xfeb801,
-  }
 
   try {
     const dados = JSON.parse(jsonDaIA) as {
@@ -327,53 +281,67 @@ function montarEmbedsDiscord(jsonDaIA: string) {
   }
 }
 
-async function enviarDiscord(payload: {
-  content: string
-  embeds: { title: string; description: string; color: number }[]
-}) {
-  const { DISCORD_WEBHOOK_URL } = process.env
-
-  if (!DISCORD_WEBHOOK_URL) {
-    console.warn("⚠️ DISCORD_WEBHOOK_URL não configurado — pulando Discord")
-    return false
-  }
-
-  const resposta = await fetch(DISCORD_WEBHOOK_URL, {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(payload),
-  })
-
-  if (!resposta.ok)
-    throw new Error(
-      `Erro ao enviar Discord: ${resposta.status} ${await resposta.text()}`,
-    )
-  console.log("✅ Mensagem enviada no Discord com sucesso")
-  return true
+interface HistoricoItem {
+  link: string
+  titulo: string
+  data: string
 }
 
-async function enviarAlertaDiscord(erro: string) {
-  const { DISCORD_WEBHOOK_URL } = process.env
-  if (!DISCORD_WEBHOOK_URL) return
+interface Historico {
+  itens: HistoricoItem[]
+}
 
+function carregarHistorico(): {
+  links: Set<string>
+  itens: HistoricoItem[]
+} {
   try {
-    await fetch(DISCORD_WEBHOOK_URL, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        content: "🚨 **Tech Briefing — Falha na execução**",
-        embeds: [
-          {
-            title: "❌ Erro",
-            description: `\`\`\`\n${erro.slice(0, 2000)}\n\`\`\``,
-            color: 0xed4245,
-          },
-        ],
-      }),
-    })
+    if (!existsSync(HISTORICO_PATH)) return { links: new Set(), itens: [] }
+    const raw = readFileSync(HISTORICO_PATH, "utf-8")
+    const data = JSON.parse(raw)
+
+    if (Array.isArray(data.itens)) {
+      return {
+        links: new Set(data.itens.map((i: HistoricoItem) => i.link)),
+        itens: data.itens,
+      }
+    }
+
+    if (Array.isArray(data.links)) {
+      const itens = data.links.map((link: string) => ({
+        link,
+        titulo: "",
+        data: "",
+      }))
+      return { links: new Set(data.links), itens }
+    }
+
+    return { links: new Set(), itens: [] }
   } catch {
-    // silêncio — não podemos fazer nada se o alerta falhar
+    console.warn("⚠️  Erro ao ler histórico, iniciando vazio")
+    return { links: new Set(), itens: [] }
   }
+}
+
+function salvarHistorico(
+  novosItens: { link: string; titulo: string; data: string }[],
+) {
+  const { itens: existentes } = carregarHistorico()
+  const linksExistentes = new Set(existentes.map((i) => i.link))
+
+  for (const item of novosItens) {
+    if (!linksExistentes.has(item.link)) {
+      existentes.push(item)
+      linksExistentes.add(item.link)
+    }
+  }
+
+  const todos = existentes.slice(-MAX_HISTORICO)
+  writeFileSync(
+    HISTORICO_PATH,
+    JSON.stringify({ itens: todos }, null, 2),
+  )
+  console.log(`💾 Histórico atualizado: ${todos.length} itens`)
 }
 
 function extrairLinksDoPayload(payload: {
@@ -391,35 +359,166 @@ function extrairLinksDoPayload(payload: {
   return links
 }
 
-function carregarHistorico(): Set<string> {
+async function enviarDiscord(payload: {
+  content: string
+  embeds: { title: string; description: string; color: number }[]
+}) {
+  const { DISCORD_WEBHOOK_URL } = process.env
+  if (!DISCORD_WEBHOOK_URL) {
+    console.warn("⚠️ DISCORD_WEBHOOK_URL não configurado")
+    return false
+  }
+
+  const resposta = await fetch(DISCORD_WEBHOOK_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload),
+  })
+
+  if (!resposta.ok)
+    throw new Error(
+      `Erro no Discord: ${resposta.status} ${await resposta.text()}`,
+    )
+  console.log("✅ Mensagem enviada no Discord com sucesso")
+  return true
+}
+
+async function enviarAlertaDiscord(erro: string) {
+  const { DISCORD_WEBHOOK_URL } = process.env
+  if (!DISCORD_WEBHOOK_URL) return
   try {
-    if (!existsSync(HISTORICO_PATH)) return new Set()
-    const raw = readFileSync(HISTORICO_PATH, "utf-8")
-    const data = JSON.parse(raw) as { links: string[] }
-    return new Set(data.links ?? [])
+    await fetch(DISCORD_WEBHOOK_URL, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        content: "🚨 **Tech Briefing — Falha na execução**",
+        embeds: [
+          {
+            title: "❌ Erro",
+            description: `\`\`\`\n${erro.slice(0, 2000)}\n\`\`\``,
+            color: 0xed4245,
+          },
+        ],
+      }),
+    })
   } catch {
-    console.warn("⚠️  Erro ao ler histórico, iniciando vazio")
+    // silêncio
+  }
+}
+
+// ─── CLI: busca ──────────────────────────────────────────────────────────
+
+function cmdBusca(termo: string) {
+  const { itens } = carregarHistorico()
+  const termoLower = termo.toLowerCase()
+
+  const resultados = itens.filter(
+    (i) =>
+      i.link.toLowerCase().includes(termoLower) ||
+      i.titulo.toLowerCase().includes(termoLower),
+  )
+
+  if (resultados.length === 0) {
+    console.log("Nenhum resultado encontrado.")
+    return
+  }
+
+  console.log(`\n🔍 ${resultados.length} resultado(s) para "${termo}":\n`)
+  for (const r of resultados) {
+    const data = r.data ? `[${r.data}]` : ""
+    const titulo = r.titulo || "(sem título)"
+    console.log(`  ${data} ${titulo}`)
+    console.log(`  ${r.link}\n`)
+  }
+}
+
+// ─── CLI: urgente ────────────────────────────────────────────────────────
+
+const URGENT_HISTORY_PATH = resolve("urgent-history.json")
+
+function carregarUrgentHistory(): Set<string> {
+  try {
+    if (!existsSync(URGENT_HISTORY_PATH)) return new Set()
+    return new Set(JSON.parse(readFileSync(URGENT_HISTORY_PATH, "utf-8")).links ?? [])
+  } catch {
     return new Set()
   }
 }
 
-function salvarHistorico(links: string[]) {
-  const existentes = carregarHistorico()
-  for (const link of links) existentes.add(link)
-  const todos = [...existentes].slice(-MAX_HISTORICO)
-  writeFileSync(HISTORICO_PATH, JSON.stringify({ links: todos }, null, 2))
-  console.log(`💾 Histórico atualizado: ${todos.length} links`)
-
-  if (process.env.GITHUB_ACTIONS === "true") {
-    console.log("📎 history.json salvo — GitHub Action fará o commit")
-  }
+function salvarUrgentHistory(links: string[]) {
+  const existentes = carregarUrgentHistory()
+  for (const l of links) existentes.add(l)
+  writeFileSync(
+    URGENT_HISTORY_PATH,
+    JSON.stringify({ links: [...existentes].slice(-200) }, null, 2),
+  )
 }
+
+async function cmdUrgente() {
+  console.log("🚨 Verificando notícias urgentes...\n")
+
+  const jaAlertados = carregarUrgentHistory()
+  const parser = new RSSParser({
+    timeout: 10000,
+    headers: { "User-Agent": "TechBriefingBot/1.0" },
+  })
+
+  const palavrasChave = config.palavras_chave_urgentes.map((p) =>
+    p.toLowerCase(),
+  )
+
+  const urgentes: { titulo: string; link: string; match: string }[] = []
+
+  for (const fonte of config.fontes_urgentes) {
+    const noticias = await buscarFonte(fonte.url, fonte.nome, null, parser, 20)
+    for (const n of noticias) {
+      if (jaAlertados.has(n.link)) continue
+      const text = `${n.titulo}`.toLowerCase()
+      const match = palavrasChave.find((kw) => text.includes(kw))
+      if (match) {
+        urgentes.push({ titulo: n.titulo, link: n.link, match })
+      }
+    }
+  }
+
+  if (urgentes.length === 0) {
+    console.log("✅ Nenhuma notícia urgente nova.")
+    return
+  }
+
+  console.log(`🔴 ${urgentes.length} notícia(s) urgente(s) encontrada(s):\n`)
+  for (const u of urgentes) {
+    console.log(`  [${u.match}] ${u.titulo}`)
+    console.log(`  ${u.link}\n`)
+  }
+
+  if (process.env.DRY_RUN === "true") {
+    console.log("⚠️  DRY_RUN ativo — não enviou nem salvou")
+    return
+  }
+
+  const embeds = urgentes.slice(0, 10).map((u) => ({
+    title: "🚨 Alerta Urgente",
+    description: `**${u.titulo}**\nPalavra-chave: \`${u.match}\`\n<${u.link}>`,
+    color: 0xed4245,
+  }))
+
+  await enviarDiscord({
+    content: `🚨 **Notícias Urgentes — ${new Date().toLocaleDateString("pt-BR")}**`,
+    embeds,
+  })
+
+  salvarUrgentHistory(urgentes.map((u) => u.link))
+  console.log("✅ Alertas urgentes enviados e registrados")
+}
+
+// ─── Execução principal ──────────────────────────────────────────────────
 
 async function executar() {
   console.log("🚀 Iniciando Tech Briefing...\n")
 
-  const historico = carregarHistorico()
-  const noticias = await buscarTodasAsNoticias(historico)
+  const { links: historicoLinks } = carregarHistorico()
+  const noticias = await buscarTodasAsNoticias(historicoLinks)
   const semanal = isSabado()
 
   if (noticias.length === 0) {
@@ -441,12 +540,42 @@ async function executar() {
   const enviado = await enviarDiscord(discordPayload)
 
   if (enviado) {
-    const linksDasNoticias = extrairLinksDoPayload(discordPayload)
-    salvarHistorico(linksDasNoticias)
+    const linksEnviados = extrairLinksDoPayload(discordPayload)
+    const hoje = new Date().toLocaleDateString("pt-BR")
+    const tituloMap = new Map(noticias.map((n) => [n.link, n.titulo]))
+    const novosItens = linksEnviados.map((link) => ({
+      link,
+      titulo: tituloMap.get(link) ?? "",
+      data: hoje,
+    }))
+    salvarHistorico(novosItens)
   }
 }
 
-executar().catch(async (erro) => {
+// ─── CLI: dispatch ───────────────────────────────────────────────────────
+
+const comando = process.argv[2]
+
+async function main() {
+  if (comando === "busca") {
+    const termo = process.argv[3]
+    if (!termo) {
+      console.error("Uso: npx tsx noticias.ts busca <termo>")
+      process.exit(1)
+    }
+    cmdBusca(termo)
+    return
+  }
+
+  if (comando === "urgente") {
+    await cmdUrgente()
+    return
+  }
+
+  await executar()
+}
+
+main().catch(async (erro) => {
   console.error("❌ Falha na execução:", erro)
   await enviarAlertaDiscord(String(erro))
   process.exit(1)

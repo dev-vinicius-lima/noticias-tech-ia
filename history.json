@@ -1,12 +1,12 @@
 {
-  "links": [
-    "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html",
-    "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html",
-    "https://thehackernews.com/2026/05/packagist-supply-chain-attack-infects-8.html",
-    "https://dev.to/zny10289/typescript-55-the-features-that-actually-matter-for-production-code-4fn9",
-    "https://dev.to/zny10289/monorepos-in-2026-turborepo-vs-nx-vs-bazel-what-actually-works-3c7d",
-    "https://dev.to/raju_dandigam/optimizing-docker-images-for-typescript-ai-agents-with-dive-and-multi-stage-builds-3gho",
-    "https://dev.to/expo/expo-sdk-56-5eb5",
-    "https://dev.to/expo/how-to-keep-your-ota-updates-lean-and-fast-3afn"
+  "itens": [
+    { "link": "https://thehackernews.com/2026/05/litespeed-cpanel-plugin-cve-2026-48172.html", "titulo": "CVE-2026-48172 no plugin cPanel da LiteSpeed permite execução de scripts como root", "data": "23/05/2026" },
+    { "link": "https://thehackernews.com/2026/05/drupal-core-sql-injection-bug-actively.html", "titulo": "Drupal Core vulnerável a SQL Injection com exploração ativa", "data": "23/05/2026" },
+    { "link": "https://thehackernews.com/2026/05/packagist-supply-chain-attack-infects-8.html", "titulo": "Packagist sofre ataque de cadeia de suprimentos", "data": "23/05/2026" },
+    { "link": "https://dev.to/zny10289/typescript-55-the-features-that-actually-matter-for-production-code-4fn9", "titulo": "TypeScript 5.5 recursos para produção", "data": "23/05/2026" },
+    { "link": "https://dev.to/zny10289/monorepos-in-2026-turborepo-vs-nx-vs-bazel-what-actually-works-3c7d", "titulo": "Monorepos 2026: Turborepo vs Nx vs Bazel", "data": "23/05/2026" },
+    { "link": "https://dev.to/raju_dandigam/optimizing-docker-images-for-typescript-ai-agents-with-dive-and-multi-stage-builds-3gho", "titulo": "Otimizando imagens Docker para TypeScript AI agents", "data": "23/05/2026" },
+    { "link": "https://dev.to/expo/expo-sdk-56-5eb5", "titulo": "Expo SDK 56 lançado", "data": "23/05/2026" },
+    { "link": "https://dev.to/expo/how-to-keep-your-ota-updates-lean-and-fast-3afn", "titulo": "Dicas para OTA updates leves no Expo", "data": "23/05/2026" }
   ]
 }

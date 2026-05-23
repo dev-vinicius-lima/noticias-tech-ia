@@ -1,0 +1,92 @@
+{
+  "categorias": {
+    "IA & LLMs": { "emoji": "🤖", "cor": "#5865F2" },
+    "Segurança": { "emoji": "🔐", "cor": "#ED4245" },
+    "Web & Backend": { "emoji": "🌐", "cor": "#57F287" },
+    "Mobile": { "emoji": "📱", "cor": "#FEB801" }
+  },
+  "fontes": [
+    {
+      "url": "https://hnrss.org/frontpage?q=AI+LLM+GPT+Claude+Gemini&count=15",
+      "categoria": "IA & LLMs",
+      "nome": "Hacker News – IA"
+    },
+    {
+      "url": "https://dev.to/feed/tag/artificial-intelligence",
+      "categoria": "IA & LLMs",
+      "nome": "Dev.to – IA"
+    },
+    {
+      "url": "https://dev.to/feed/tag/machine-learning",
+      "categoria": "IA & LLMs",
+      "nome": "Dev.to – ML"
+    },
+    {
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "categoria": "Segurança",
+      "nome": "The Hacker News"
+    },
+    {
+      "url": "https://dev.to/feed/tag/security",
+      "categoria": "Segurança",
+      "nome": "Dev.to – Security"
+    },
+    {
+      "url": "https://hnrss.org/frontpage?q=NestJS+Node+TypeScript+API&count=10",
+      "categoria": "Web & Backend",
+      "nome": "Hacker News – Web"
+    },
+    {
+      "url": "https://dev.to/feed/tag/javascript",
+      "categoria": "Web & Backend",
+      "nome": "Dev.to – JavaScript"
+    },
+    {
+      "url": "https://dev.to/feed/tag/node",
+      "categoria": "Web & Backend",
+      "nome": "Dev.to – Node"
+    },
+    {
+      "url": "https://dev.to/feed/tag/typescript",
+      "categoria": "Web & Backend",
+      "nome": "Dev.to – TypeScript"
+    },
+    {
+      "url": "https://dev.to/feed/tag/react-native",
+      "categoria": "Mobile",
+      "nome": "Dev.to – React Native"
+    },
+    {
+      "url": "https://dev.to/feed/tag/expo",
+      "categoria": "Mobile",
+      "nome": "Dev.to – Expo"
+    }
+  ],
+  "modelos": [
+    "openai/gpt-oss-120b:free",
+    "google/gemma-4-26b-a4b-it:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
+    "z-ai/glm-4.5-air:free",
+    "arcee-ai/trinity-large-thinking:free",
+    "poolside/laguna-xs.2:free",
+    "liquid/lfm-2.5-1.2b-instruct:free",
+    "nvidia/nemotron-3-super-120b-a12b:free",
+    "baidu/cobuddy:free"
+  ],
+  "fontes_urgentes": [
+    {
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "nome": "The Hacker News"
+    }
+  ],
+  "palavras_chave_urgentes": [
+    "CVE-2026", "actively exploited", "zero-day", "0-day",
+    "critical", "RCE", "remote code execution", "KEV",
+    "proof of concept", "PoC", "ransomware"
+  ],
+  "agenda": {
+    "fuso": "America/Sao_Paulo",
+    "briefing_diario": "0 11 * * *",
+    "urgente_intervalo_minutos": 120
+  }
+}
