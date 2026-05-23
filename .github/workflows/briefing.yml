@@ -1,0 +1,25 @@
+name: Tech Briefing
+
+on:
+  schedule:
+    - cron: "0 11 * * *" # 08:00 BRT (11:00 UTC)
+  workflow_dispatch: # permite rodar manualmente pelo site do GitHub
+
+jobs:
+  briefing:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npx tsx noticias.ts
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          DRY_RUN: "false"

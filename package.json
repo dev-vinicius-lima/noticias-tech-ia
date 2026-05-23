@@ -1,0 +1,16 @@
+{
+  "name": "tech-briefing",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsx src/briefing.ts"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "rss-parser": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "tsx": "^4.15.7",
+    "typescript": "^5.4.5"
+  }
+}
