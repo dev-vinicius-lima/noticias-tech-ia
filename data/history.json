@@ -64,6 +64,51 @@
       "link": "https://aws.amazon.com/blogs/aws/amazon-redshift-introduces-aws-graviton-based-rg-instances-with-an-integrated-data-lake-query-engine/",
       "titulo": "Amazon Redshift introduces AWS Graviton-based RG instances with an integrated data lake query engine",
       "data": "23/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/laravel-lang-php-packages-compromised.html",
+      "titulo": "Laravel-Lang PHP Packages Compromised to Deliver Cross-Platform Credential Stealer",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/ubiquiti-patches-three-max-severity-unifi-os-vulnerabilities/",
+      "titulo": "Ubiquiti patches three max severity UniFi OS vulnerabilities",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/trend-micro-warns-of-apex-one-zero-day-exploited-in-attacks/",
+      "titulo": "Trend Micro warns of Apex One zero-day exploited in the wild",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/03/26/1.94.1-release/",
+      "titulo": "Announcing Rust 1.94.1",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/the-aws-mcp-server-is-now-generally-available/",
+      "titulo": "The AWS MCP Server is now generally available",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://dev.to/a1996kash/agentium-build-production-grade-ai-agents-in-typescript-without-the-bloat-7nb",
+      "titulo": "Agentium: Build Production-Grade AI Agents in TypeScript Without the Bloat",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://dev.to/expo/how-to-upgrade-to-expo-sdk-56-o3b",
+      "titulo": "How to upgrade to Expo SDK 56",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://dev.to/peakiqofficial/create-expo-android-config-plugin-for-react-native-6pb",
+      "titulo": "Create Expo Android Config Plugin for React Native",
+      "data": "24/05/2026"
+    },
+    {
+      "link": "https://dev.to/sagnik2001/i-built-a-free-modern-alternative-to-paid-universal-sign-in-for-expo-51j2",
+      "titulo": "I Built a Free, Modern Alternative to Paid Universal Sign-In for Expo",
+      "data": "24/05/2026"
     }
   ]
 }
