@@ -109,6 +109,46 @@
       "link": "https://dev.to/sagnik2001/i-built-a-free-modern-alternative-to-paid-universal-sign-in-for-expo-51j2",
       "titulo": "I Built a Free, Modern Alternative to Paid Universal Sign-In for Expo",
       "data": "24/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/ghost-cms-cve-2026-26980-exploited-to.html",
+      "titulo": "Ghost CMS CVE-2026-26980 Exploited to Hijack 700+ Sites for ClickFix Attacks",
+      "data": "25/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/trapdoor-supply-chain-attack-spreads.html",
+      "titulo": "TrapDoor Supply Chain Attack Spreads Credential-Stealing Malware via npm, PyPI, and CratesIO",
+      "data": "25/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/lazarus-deploys-remotepe-memory-only.html",
+      "titulo": "Lazarus Deploys RemotePE Memory-Only RAT Against Financial and Crypto Firms",
+      "data": "25/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/05/25/cve-2026-5223/",
+      "titulo": "Security Advisory for Cargo (CVE-2026-5223)",
+      "data": "25/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/05/01/nvptx-baseline-update/",
+      "titulo": "Raising the baseline for the `nvptx64-nvidia-cuda` target",
+      "data": "25/05/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/amazon-bedrock-introduces-new-advanced-prompt-optimization-and-migration-tool/",
+      "titulo": "Amazon Bedrock introduces new advanced prompt optimization and migration tool",
+      "data": "25/05/2026"
+    },
+    {
+      "link": "https://dev.to/cristian_iridon_286794874/get-a-working-preview-for-expo-web-in-under-2-minutes-3a3i",
+      "titulo": "Get a working preview for Expo web in under 2 minutes",
+      "data": "25/05/2026"
+    },
+    {
+      "link": "https://dev.to/fayazbuilds_n5f2t7/i-built-let-a-local-first-habit-and-life-events-tracker-in-react-native-33hk",
+      "titulo": "I built LET — a local-first habit and life-events tracker in React Native",
+      "data": "25/05/2026"
     }
   ]
 }
