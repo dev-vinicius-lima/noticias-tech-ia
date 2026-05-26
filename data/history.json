@@ -149,6 +149,36 @@
       "link": "https://dev.to/fayazbuilds_n5f2t7/i-built-let-a-local-first-habit-and-life-events-tracker-in-react-native-33hk",
       "titulo": "I built LET — a local-first habit and life-events tracker in React Native",
       "data": "25/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/microsoft-patches-sharepoint-rce-flaw.html",
+      "titulo": "Microsoft Patches SharePoint RCE Flaw CVE-2026-45659 Across Server Versions",
+      "data": "26/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/mfa-prompt-bombing-why-your-second.html",
+      "titulo": "MFA Prompt Bombing: Why Your Second Factor Isn't Saving You",
+      "data": "26/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/cert-in-mandates-12-hour-patching-for.html",
+      "titulo": "CERT-In Recommends 12-Hour Patching for Internet-Facing Flaws Amid AI-Assisted Attacks",
+      "data": "26/05/2026"
+    },
+    {
+      "link": "https://dev.to/subhanfarrakh/react-19-what-actually-changed-for-developers-1bae",
+      "titulo": "React 19: What Actually Changed for Developers",
+      "data": "26/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/05/25/cve-2026-5222/",
+      "titulo": "Security Advisory for Cargo (CVE-2026-5222)",
+      "data": "26/05/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-transform-at-1-year-claude-platform-on-aws-ec2-m3-ultra-mac-instances-and-more-may-18-2026/",
+      "titulo": "AWS Weekly Roundup: AWS Transform at 1 year, Claude Platform on AWS, EC2 M3 Ultra Mac instances, and more (May 18, 2026)",
+      "data": "26/05/2026"
     }
   ]
 }
