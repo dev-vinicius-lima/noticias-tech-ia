@@ -179,6 +179,51 @@
       "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-transform-at-1-year-claude-platform-on-aws-ec2-m3-ultra-mac-instances-and-more-may-18-2026/",
       "titulo": "AWS Weekly Roundup: AWS Transform at 1 year, Claude Platform on AWS, EC2 M3 Ultra Mac instances, and more (May 18, 2026)",
       "data": "26/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/gitea-vulnerability-exposes-private.html",
+      "titulo": "Gitea Vulnerability Exposes Private Container Images without Authentication",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-gives-feds-4-days-to-patch-actively-exploited-cpanel-plugin-flaw/",
+      "titulo": "CISA gives feds 4 days to patch actively exploited cPanel plugin flaw",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/glassworm-malware-takedown-disrupts.html",
+      "titulo": "GlassWorm Malware Takedown Disrupts Developer Supply Chain Attack Infrastructure",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://dev.to/axledbetter/cadence-v84-a-multi-model-coding-harness-where-claude-writes-codex-reviews-and-bugbot-triages-1d73",
+      "titulo": "Cadence v8.4: a multi-model coding harness where Claude writes, Codex reviews, and Bugbot triages",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/04/04/docsrs-only-default-targets/",
+      "titulo": "docs.rs: building fewer targets by default",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-local-zones-in-istanbul-open-source-extenddb-kiro-web-and-more-may-25-2026/",
+      "titulo": "AWS Weekly Roundup: AWS Local Zones in Istanbul, open-source ExtendDB, Kiro Web, and more (May 25, 2026)",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://dev.to/diven_rastdus_c5af27d68f3/3-expo-sdk-56-bugs-that-crashed-my-app-before-it-even-launched-1hbp",
+      "titulo": "3 Expo SDK 56 Bugs That Crashed My App Before It Even Launched",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://dev.to/toddsullivan/wrapping-apples-lidar-room-scanner-as-a-native-expo-module-cip",
+      "titulo": "Wrapping Apple's LiDAR Room Scanner as a Native Expo Module",
+      "data": "27/05/2026"
+    },
+    {
+      "link": "https://dev.to/expo/aso-skills-aso-in-your-ai-workflow-3288",
+      "titulo": "ASO Skills: ASO in Your AI Workflow",
+      "data": "27/05/2026"
     }
   ]
 }
