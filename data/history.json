@@ -224,6 +224,56 @@
       "link": "https://dev.to/expo/aso-skills-aso-in-your-ai-workflow-3288",
       "titulo": "ASO Skills: ASO in Your AI Workflow",
       "data": "27/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/critical-gogs-rce-vulnerability-lets.html",
+      "titulo": "Critical Gogs RCE Vulnerability Lets Any Authenticated User Execute Arbitrary Code",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/threat-actors-exploit-critical.html",
+      "titulo": "Threat Actors Exploit Critical FortiClient EMS Flaw to Deploy Credential Stealer",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/new-russian-linked-greyvibe-targets.html",
+      "titulo": "New Russian-Linked GREYVIBE Targets Ukraine with AI-Powered Cyberattacks",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/05/28/Rust-1.96.0/",
+      "titulo": "Announcing Rust 1.96.0",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://dev.to/iurii_rogulia/uuid-v7-vs-v4-postgresql-performance-benchmark-1d3k",
+      "titulo": "UUID v7 vs v4: PostgreSQL Performance Benchmark",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/introducing-the-next-generation-of-aws-resilience-hub-for-generative-ai-based-sre-resilience-journey/",
+      "titulo": "Introducing the next generation of AWS Resilience Hub for generative AI-based SRE resilience journey",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://dev.to/russel_dsouza_bd584a3cb2a/react-native-ai-app-cost-in-2026-line-by-line-51l",
+      "titulo": "React Native AI app cost in 2026, line by line",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://dev.to/expo/control-swiftui-and-compose-state-synchronously-with-worklets-in-expo-ui-3ado",
+      "titulo": "Control SwiftUI and Compose State Synchronously with Worklets in Expo UI",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-mythos-class-models-will-roll-out-to-the-public/",
+      "titulo": "Anthropic confirms Claude Mythos-class models will roll out to the public",
+      "data": "29/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/greyvibe-hackers-use-chatgpt-gemini-to-power-cyberattacks/",
+      "titulo": "GreyVibe hackers use ChatGPT, Gemini to power cyberattacks",
+      "data": "29/05/2026"
     }
   ]
 }
