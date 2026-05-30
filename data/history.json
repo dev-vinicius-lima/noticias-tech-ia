@@ -274,6 +274,31 @@
       "link": "https://www.bleepingcomputer.com/news/security/greyvibe-hackers-use-chatgpt-gemini-to-power-cyberattacks/",
       "titulo": "GreyVibe hackers use ChatGPT, Gemini to power cyberattacks",
       "data": "29/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
+      "titulo": "PAN-OS GlobalProtect Authentication Bypass (CVE-2026-0257) Under Active Exploitation",
+      "data": "30/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/chatgphish-vulnerability-turns-chatgpt.html",
+      "titulo": "ChatGPhish Vulnerability Turns ChatGPT Web Summaries Into a Phishing Surface",
+      "data": "30/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/google-chrome-adds-session-cookie-theft-protection-for-all-users/",
+      "titulo": "Google Chrome adds session cookie theft protection for all users",
+      "data": "30/05/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/introducing-the-next-generation-of-amazon-opensearch-serverless-for-building-your-agentic-ai-applications/",
+      "titulo": "Introducing the next generation of Amazon OpenSearch Serverless for building your agentic AI applications",
+      "data": "30/05/2026"
+    },
+    {
+      "link": "https://dev.to/siddharth_pandey_27/nodejs-just-closed-a-major-gap-with-deno-and-bun-4hji",
+      "titulo": "Node.js Just Closed a Major Gap with Deno and Bun",
+      "data": "30/05/2026"
     }
   ]
 }
