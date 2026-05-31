@@ -299,6 +299,46 @@
       "link": "https://dev.to/siddharth_pandey_27/nodejs-just-closed-a-major-gap-with-deno-and-bun-4hji",
       "titulo": "Node.js Just Closed a Major Gap with Deno and Bun",
       "data": "30/05/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
+      "titulo": "Attackers Use LLM Agent for Post-Exploitation After Marimo CVE-2026-39987 Exploit",
+      "data": "31/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/palo-alto-globalprotect-vpn-auth-bypass-flaw-now-exploited-in-attacks/",
+      "titulo": "Palo Alto GlobalProtect VPN auth bypass flaw now exploited in attacks",
+      "data": "31/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/new-cifswitch-linux-flaw-gives-root-on-multiple-distributions/",
+      "titulo": "New CIFSwitch Linux flaw gives root on multiple distributions",
+      "data": "31/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/05/18/project-goals-2026-04/",
+      "titulo": "Project goals update — April 2026 (end of 2025H2)",
+      "data": "31/05/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-amazon-bedrock-agentcore-payments-agent-toolkit-for-aws-and-more-may-11-2026/",
+      "titulo": "AWS Weekly Roundup: Amazon Bedrock AgentCore payments, Agent Toolkit for AWS, and more (May 11, 2026)",
+      "data": "31/05/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/04/30/gsoc-2026-selected-projects/",
+      "titulo": "Announcing Google Summer of Code 2026 selected projects",
+      "data": "31/05/2026"
+    },
+    {
+      "link": "https://dev.to/satyasootar/how-instagram-stores-reels-photos-and-drafts-behind-the-scenes-1jeb",
+      "titulo": "How Instagram Stores Reels, Photos, and Drafts Behind the Scenes",
+      "data": "31/05/2026"
+    },
+    {
+      "link": "https://dev.to/satyasootar/how-whatsapp-works-without-internet-offline-messaging-and-sync-explained-3nle",
+      "titulo": "How WhatsApp Works Without Internet: Offline Messaging and Sync Explained",
+      "data": "31/05/2026"
     }
   ]
 }
