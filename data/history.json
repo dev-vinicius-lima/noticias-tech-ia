@@ -339,6 +339,41 @@
       "link": "https://dev.to/satyasootar/how-whatsapp-works-without-internet-offline-messaging-and-sync-explained-3nle",
       "titulo": "How WhatsApp Works Without Internet: Offline Messaging and Sync Explained",
       "data": "31/05/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/microsoft/critical-windows-netlogon-remote-code-execution-flaw-now-exploited-in-attacks/",
+      "titulo": "Critical Windows Netlogon RCE flaw now exploited in attacks",
+      "data": "01/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
+      "titulo": "Critical WP Maps Pro Flaw Actively Exploited to Create Admin Accounts",
+      "data": "01/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/openai-codex-authentication-tokens.html",
+      "titulo": "OpenAI Codex Authentication Tokens Stolen in codexui-android npm Supply Chain Attack",
+      "data": "01/06/2026"
+    },
+    {
+      "link": "https://dev.to/vpsfordev/i-benchmarked-hetzner-cx22-vs-digitalocean-for-nodejs-in-2026-5x-cheaper-4-slower-1j82",
+      "titulo": "I benchmarked Hetzner CX22 vs DigitalOcean for Node.js in 2026 — 5 cheaper, 4% slower",
+      "data": "01/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-8-on-aws-aurora-mysql-with-kiro-powers-and-more-june-1-2026/",
+      "titulo": "AWS Weekly Roundup: Claude Opus 4.8 on AWS, Aurora MySQL with Kiro Powers, and more (June 1, 2026)",
+      "data": "01/06/2026"
+    },
+    {
+      "link": "https://dev.to/devlinduldulao/daloyjs-is-the-latest-modern-enterprise-typescript-framework-and-it-has-your-back-on-security-1603",
+      "titulo": "DaloyJS Is the Latest Modern Enterprise TypeScript Framework, and It Has Your Back on Security",
+      "data": "01/06/2026"
+    },
+    {
+      "link": "https://dev.to/satyasootar/expo-router-vs-react-navigation-which-one-should-you-use-in-2026-40mm",
+      "titulo": "Expo Router vs React Navigation: Which One Should You Use in 2026?",
+      "data": "01/06/2026"
     }
   ]
 }
