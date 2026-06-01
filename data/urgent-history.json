@@ -24,6 +24,7 @@
     "https://thehackernews.com/2026/05/attackers-use-llm-agent-for-post.html",
     "https://thehackernews.com/2026/05/pan-os-globalprotect-authentication.html",
     "https://thehackernews.com/2026/06/critical-wp-maps-pro-flaw-actively.html",
-    "https://www.bleepingcomputer.com/news/microsoft/critical-windows-netlogon-remote-code-execution-flaw-now-exploited-in-attacks/"
+    "https://www.bleepingcomputer.com/news/microsoft/critical-windows-netlogon-remote-code-execution-flaw-now-exploited-in-attacks/",
+    "https://www.bleepingcomputer.com/news/security/dashlane-password-manager-users-locked-out-by-brute-force-attacks/"
   ]
 }
