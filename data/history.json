@@ -374,6 +374,46 @@
       "link": "https://dev.to/satyasootar/expo-router-vs-react-navigation-which-one-should-you-use-in-2026-40mm",
       "titulo": "Expo Router vs React Navigation: Which One Should You Use in 2026?",
       "data": "01/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/one-click-github-dev-attack-lets.html",
+      "titulo": "One-Click GitHub Dev Attack Lets Attackers Steal Full GitHub OAuth Tokens",
+      "data": "03/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/vs-code-zero-day-lets-hackers-steal-github-tokens-in-one-click/",
+      "titulo": "VS Code zero-day lets hackers steal GitHub tokens in one click",
+      "data": "03/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/critical-kirki-flaw-exploited-to-hijack-wordpress-admin-accounts/",
+      "titulo": "Critical Kirki flaw exploited to hijack WordPress admin accounts",
+      "data": "03/06/2026"
+    },
+    {
+      "link": "https://dev.to/jtorchia/prisma-5-prisma-6-the-breaking-changes-i-hit-in-my-real-schema-and-how-i-fixed-them-without-5ed6",
+      "titulo": "Prisma 5 Prisma 6: The Breaking Changes I Hit in My Real Schema and How I Fixed Them Without Breaking Production",
+      "data": "03/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/openai-upgrades-gpt-55-as-it-plans-to-retire-legacy-chatgpt-models/",
+      "titulo": "OpenAI upgrades GPT-5.5, as it plans to retire legacy ChatGPT models",
+      "data": "03/06/2026"
+    },
+    {
+      "link": "https://dev.to/hex_tracker/no-sqlite-driver-works-in-both-bun-and-node-here-is-how-i-shipped-one-package-that-runs-on-both-20ol",
+      "titulo": "No SQLite driver works in both Bun and Node. Here is how I shipped one package that runs on both.",
+      "data": "03/06/2026"
+    },
+    {
+      "link": "https://dev.to/daloyjs/daloyjs-is-the-backend-your-react-native-and-expo-app-deserves-lck",
+      "titulo": "DaloyJS Is the Backend Your React Native and Expo App Deserves",
+      "data": "03/06/2026"
+    },
+    {
+      "link": "https://dev.to/maverickjkp/donotnotify-android-app-filters-promotional-notifications-4hke",
+      "titulo": "DoNotNotify: Android App Filters Promotional Notifications",
+      "data": "03/06/2026"
     }
   ]
 }
