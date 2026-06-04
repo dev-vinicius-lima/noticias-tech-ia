@@ -414,6 +414,46 @@
       "link": "https://dev.to/maverickjkp/donotnotify-android-app-filters-promotional-notifications-4hke",
       "titulo": "DoNotNotify: Android App Filters Promotional Notifications",
       "data": "03/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/autonomous-ai-tool-finds-2-year-old-rce.html",
+      "titulo": "Autonomous AI Tool Finds 2-Year-Old RCE Flaw in Redis (CVE-2026-23479)",
+      "data": "04/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/cisco-warns-of-critical-unified-cm-flaw-with-poc-exploit-code/",
+      "titulo": "Cisco warns of critical Unified CM flaw with PoC exploit code",
+      "data": "04/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/new-http-2-bomb-dos-attack-crashes-web-servers-in-under-a-minute/",
+      "titulo": "New 'HTTP/2 Bomb' DoS attack crashes web servers in under a minute",
+      "data": "04/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/get-started-with-openai-gpt-5-5-gpt-5-4-models-and-codex-on-amazon-bedrock/",
+      "titulo": "Get started with OpenAI GPT-5.5, GPT-5.4 models, and Codex on Amazon Bedrock",
+      "data": "04/06/2026"
+    },
+    {
+      "link": "https://dev.to/jtorchia/nextjs-16-middleware-authorization-patterns-that-scale-and-the-ones-that-cause-race-conditions-4pfk",
+      "titulo": "Next.js 16 Middleware: authorization patterns that scale and the ones that cause race conditions",
+      "data": "04/06/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/06/02/launching-the-rust-foundation-maintainers-fund/",
+      "titulo": "Launching the Rust Foundation Maintainers Fund",
+      "data": "04/06/2026"
+    },
+    {
+      "link": "https://dev.to/sanjay_s_ce1898fb89995396/i-built-kyro-an-open-source-cli-for-react-native-diagnostics-and-repair-3fnl",
+      "titulo": "I Built Kyro: An Open-Source CLI for React Native Diagnostics and Repair",
+      "data": "04/06/2026"
+    },
+    {
+      "link": "https://dev.to/jane49cloud/building-lifefast-a-solo-founders-deep-dive-into-fasting-app-architecture-p9o",
+      "titulo": "Building LifeFast: A Solo Founder's Deep Dive into Fasting App Architecture",
+      "data": "04/06/2026"
     }
   ]
 }
