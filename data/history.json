@@ -454,6 +454,36 @@
       "link": "https://dev.to/jane49cloud/building-lifefast-a-solo-founders-deep-dive-into-fasting-app-architecture-p9o",
       "titulo": "Building LifeFast: A Solo Founder's Deep Dive into Fasting App Architecture",
       "data": "04/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/new-cisco-sd-wan-flaw-exploited-in-zero-day-attacks-to-gain-root/",
+      "titulo": "Cisco warns of unpatched SD-WAN zero-day exploited in attacks",
+      "data": "05/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisco-patches-cve-2026-20230-in-unified.html",
+      "titulo": "Cisco Patches CVE-2026-20230 in Unified CM as Exploit Code Goes Public",
+      "data": "05/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/hackers-exploit-critical-everest-forms.html",
+      "titulo": "Hackers Exploit Critical Everest Forms Pro WordPress Plugin Flaw to Take Over Sites",
+      "data": "05/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/improve-your-application-resilience-with-amazon-cognito-multi-region-replication/",
+      "titulo": "Improve your application resilience with Amazon Cognito multi-Region replication",
+      "data": "05/06/2026"
+    },
+    {
+      "link": "https://dev.to/sebastienlorber/this-week-in-react-284-tanstack-start-compiler-react-router-appjs-gesture-handler-spm-523p",
+      "titulo": "This Week In React #284 : TanStack Start, Compiler, React Router | App.js, Gesture Handler, SPM, Expo | npm, Node.js, Astro",
+      "data": "05/06/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/05/04/outreachy-2026-may/",
+      "titulo": "Rust is participating in Outreachy",
+      "data": "05/06/2026"
     }
   ]
 }
