@@ -484,6 +484,31 @@
       "link": "https://blog.rust-lang.org/2026/05/04/outreachy-2026-may/",
       "titulo": "Rust is participating in Outreachy",
       "data": "05/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/ai-agent-uncovers-21-zero-days-in.html",
+      "titulo": "AI Agent Uncovers 21 Zero-Days in FFmpeg; Chrome Patches Record 429 Bugs",
+      "data": "06/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisa-adds-actively-exploited-solarwinds.html",
+      "titulo": "CISA Adds Actively Exploited SolarWinds Serv-U DoS Flaw to KEV Catalog",
+      "data": "06/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-manager-cve-2026.html",
+      "titulo": "Cisco Catalyst SD-WAN Manager CVE-2026-20245 Flaw Actively Exploited – No Patch Available",
+      "data": "06/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/try-the-new-console-experience-in-amazon-bedrock-optimized-for-anthropic-and-openai-compatible-apis/",
+      "titulo": "Try the new console experience in Amazon Bedrock, optimized for Anthropic- and OpenAI-compatible APIs",
+      "data": "06/06/2026"
+    },
+    {
+      "link": "https://dev.to/uaslimcreate/react-19-useactionstate-for-form-driven-ai-features-building-progressive-enhancement-without-3jl4",
+      "titulo": "React 19 useActionState for Form-Driven AI Features: Building Progressive Enhancement Without JavaScript Frameworks Complexity",
+      "data": "06/06/2026"
     }
   ]
 }
