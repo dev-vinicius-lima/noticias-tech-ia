@@ -509,6 +509,41 @@
       "link": "https://dev.to/uaslimcreate/react-19-useactionstate-for-form-driven-ai-features-building-progressive-enhancement-without-3jl4",
       "titulo": "React 19 useActionState for Form-Driven AI Features: Building Progressive Enhancement Without JavaScript Frameworks Complexity",
       "data": "06/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/miasma-worm-hits-73-microsoft-github.html",
+      "titulo": "Miasma Worm Hits 73 Microsoft GitHub Repositories in Major Supply Chain Attack",
+      "data": "07/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/critical-everest-forms-pro-flaw-exploited-to-take-over-wordpress-sites/",
+      "titulo": "Critical Everest Forms Pro flaw exploited to take over WordPress sites",
+      "data": "07/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-hackers-now-exploit-solarwinds-serv-u-flaw-to-crash-servers/",
+      "titulo": "CISA: Hackers now exploit SolarWinds Serv-U flaw to crash servers",
+      "data": "07/06/2026"
+    },
+    {
+      "link": "https://dev.to/toolkitonline/screenshot-apis-vs-headless-chrome-benchmarks-costs-and-decision-framework-59i9",
+      "titulo": "Screenshot APIs vs Headless Chrome: Benchmarks, Costs, and Decision Framework",
+      "data": "07/06/2026"
+    },
+    {
+      "link": "https://dev.to/syedahmershah/is-nodejs-still-enough-when-to-move-your-backend-to-rust-31j3",
+      "titulo": "Is Node.js Still Enough? When to Move Your Backend to Rust",
+      "data": "07/06/2026"
+    },
+    {
+      "link": "https://dev.to/jsonviewertool/i-built-a-free-disposable-email-api-on-cloudflare-workers-no-key-no-signup-114a",
+      "titulo": "I built a free disposable-email API on Cloudflare Workers (no key, no signup)",
+      "data": "07/06/2026"
+    },
+    {
+      "link": "https://dev.to/diven_rastdus_c5af27d68f3/3-react-native-bugs-that-crashed-on-device-but-passed-every-test-5fbd",
+      "titulo": "3 React Native Bugs That Crashed on Device but Passed Every Test",
+      "data": "07/06/2026"
     }
   ]
 }
