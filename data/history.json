@@ -579,6 +579,46 @@
       "link": "https://dev.to/mostafij/i-added-one-time-purchases-to-my-react-native-app-with-revenuecat-heres-everything-i-wish-i-knew-41hn",
       "titulo": "I Added One-Time Purchases to My React Native App with RevenueCat — Here's Everything I Wish I Knew",
       "data": "08/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/chrome-v8-zero-day-cve-2026-11645.html",
+      "titulo": "Chrome V8 Zero-Day CVE-2026-11645 Exploited in the Wild - Patch Now",
+      "data": "09/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/litellm-flaw-cve-2026-42271-exploited.html",
+      "titulo": "LiteLLM Flaw CVE-2026-42271 Exploited in the Wild, Chains to Unauthenticated RCE",
+      "data": "09/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/one-character-linux-kernel-flaw-enables.html",
+      "titulo": "One-Character Linux Kernel Flaw Enables Local Root Access, Exploits Now Public",
+      "data": "09/06/2026"
+    },
+    {
+      "link": "https://dev.to/devsignal/nodejs-annual-releases-terraform-115-gemma-4-multimodal-3j3p",
+      "titulo": "Node.js Annual Releases, Terraform 1.15, Gemma 4 Multimodal",
+      "data": "09/06/2026"
+    },
+    {
+      "link": "https://dev.to/usamacheema453/fastapi-vs-nodejs-in-2026-which-backend-should-you-choose-3476",
+      "titulo": "FastAPI vs Node.js in 2026: Which Backend Should You Choose?",
+      "data": "09/06/2026"
+    },
+    {
+      "link": "https://dev.to/jtorchia/react-19-server-components-and-caching-the-mental-model-i-was-missing-after-reading-the-docs-acl",
+      "titulo": "React 19 Server Components and caching: the mental model I was missing after reading the docs",
+      "data": "09/06/2026"
+    },
+    {
+      "link": "https://dev.to/expo/write-swift-and-kotlin-directly-in-your-react-native-app-with-expo-sdk-56-anh",
+      "titulo": "Write Swift and Kotlin directly in your React Native app with Expo SDK 56",
+      "data": "09/06/2026"
+    },
+    {
+      "link": "https://dev.to/expo/swift-calls-jsi-directly-in-expo-sdk-56-removing-the-objective-c-layer-33jc",
+      "titulo": "Swift Calls JSI Directly in Expo SDK 56: Removing the Objective-C++ Layer",
+      "data": "09/06/2026"
     }
   ]
 }
