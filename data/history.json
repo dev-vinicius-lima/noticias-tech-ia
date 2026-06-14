@@ -709,6 +709,46 @@
       "link": "https://www.bleepingcomputer.com/news/security/phpbb-forum-fixes-auth-bypass-bug-lurking-for-a-decade/",
       "titulo": "phpBB forum fixes auth bypass bug lurking for a decade",
       "data": "13/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/critical-splunk-enterprise-flaw-lets.html",
+      "titulo": "Critical Splunk Enterprise Flaw Lets Attackers Run Code Without Authentication",
+      "data": "14/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/china-linked-hackers-backdoored-linux.html",
+      "titulo": "China-Linked Hackers Backdoored Linux Login Software to Hide for Nearly a Decade",
+      "data": "14/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/over-400-arch-linux-packages-compromised-to-push-rootkit-infostealer/",
+      "titulo": "Over 400 Arch Linux packages compromised to push rootkit, infostealer",
+      "data": "14/06/2026"
+    },
+    {
+      "link": "https://dev.to/syedahmedali_dev/the-nextjs-data-cache-error-that-broke-my-production-app-and-how-i-fixed-it-4o9",
+      "titulo": "The Next.js Data Cache Error That Broke My Production App (And How I Fixed It)",
+      "data": "14/06/2026"
+    },
+    {
+      "link": "https://dev.to/mahdi_benrhouma_fe1c6005/complete-type-safety-guide-for-nextjs-and-supabase-with-typescript-24n8",
+      "titulo": "Complete Type Safety Guide for Next.js and Supabase with TypeScript",
+      "data": "14/06/2026"
+    },
+    {
+      "link": "https://dev.to/jtorchia/authentication-tokens-jwt-paseto-and-session-tokens-the-decision-tree-i-always-needed-5go6",
+      "titulo": "Authentication tokens: JWT, Paseto, and session tokens — the decision tree I always needed",
+      "data": "14/06/2026"
+    },
+    {
+      "link": "https://dev.to/diven_rastdus_c5af27d68f3/revenuecat-said-my-play-store-credentials-were-invalid-they-werent-1pl4",
+      "titulo": "RevenueCat Said My Play Store Credentials Were Invalid. They Weren't.",
+      "data": "14/06/2026"
+    },
+    {
+      "link": "https://dev.to/h11maitree/one-expo-project-two-heroui-css-pipelines-avoiding-web-and-native-style-conflicts-5d8",
+      "titulo": "One Expo Project, Two HeroUI CSS Pipelines: Avoiding Web and Native Style Conflicts",
+      "data": "14/06/2026"
     }
   ]
 }
