@@ -779,6 +779,46 @@
       "link": "https://dev.to/paradane/react-server-components-in-production-what-we-learned-after-migrating-a-client-dashboard-2e0g",
       "titulo": "React Server Components in Production: What We Learned After Migrating a Client Dashboard",
       "data": "15/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/attackers-exploit-three-fortinet.html",
+      "titulo": "Attackers Exploit Three Fortinet FortiSandbox Flaws, One Patched Last Week",
+      "data": "16/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisco-releases-security-updates-for.html",
+      "titulo": "Cisco Releases Security Updates for Actively Exploited SD-WAN Manager Flaw",
+      "data": "16/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/new-rokarolla-android-malware-steals.html",
+      "titulo": "New Rokarolla Android Malware Steals PINs, SMS Codes, and Crypto Wallet Funds",
+      "data": "16/06/2026"
+    },
+    {
+      "link": "https://dev.to/alya_mahalini_f05d9953cfa/swc-a-rust-powered-javascript-compiler-that-trades-ecosystem-maturity-for-raw-speed-3ajo",
+      "titulo": "SWC: A Rust-Powered JavaScript Compiler That Trades Ecosystem Maturity for Raw Speed",
+      "data": "16/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-waf-adds-ai-traffic-monetization-capability-to-help-content-owners-charge-ai-bots-for-content-access/",
+      "titulo": "AWS WAF adds AI traffic monetization capability to help content owners charge AI bots for content access",
+      "data": "16/06/2026"
+    },
+    {
+      "link": "https://dev.to/nazar_boyko/building-ai-apis-with-nodejs-564l",
+      "titulo": "Building AI APIs With Node.js",
+      "data": "16/06/2026"
+    },
+    {
+      "link": "https://dev.to/debojitdas2003/the-bulletproof-guide-to-setting-up-expo-eas-ota-updates-without-the-tears-4le3",
+      "titulo": "The Bulletproof Guide to Setting Up Expo EAS & OTA Updates (Without the Tears)",
+      "data": "16/06/2026"
+    },
+    {
+      "link": "https://dev.to/debojitdas2003/how-to-maximize-profit-out-of-eas-and-when-to-buy-the-subscription-347d",
+      "titulo": "How to Maximize Profit Out of EAS (And When to Buy the Subscription)",
+      "data": "16/06/2026"
     }
   ]
 }
