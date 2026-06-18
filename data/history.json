@@ -819,6 +819,51 @@
       "link": "https://dev.to/debojitdas2003/how-to-maximize-profit-out-of-eas-and-when-to-buy-the-subscription-347d",
       "titulo": "How to Maximize Profit Out of EAS (And When to Buy the Subscription)",
       "data": "16/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/microsoft-confirms-rogueplanet-defender_02022423645.html",
+      "titulo": "Microsoft Confirms RoguePlanet Defender Zero-Day, Says Patch is in Development",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/f5-issues-out-of-band-patches-for-critical-nginx-vulnerabilities/",
+      "titulo": "F5 issues out-of-band patches for critical NGINX vulnerabilities",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-vpn-credentials-for-73-000-devices/",
+      "titulo": "FortiBleed leak exposes Fortinet VPN credentials for 73,000 devices.",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/top-announcements-of-the-aws-summit-in-new-york-2026/",
+      "titulo": "Top announcements of the AWS Summit in New York, 2026",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/introducing-amazon-bedrock-managed-knowledge-base-for-faster-more-accurate-enterprise-ai-applications/",
+      "titulo": "Introducing Amazon Bedrock Managed Knowledge Base for faster, more accurate enterprise AI applications",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://dev.to/bishoy_bishai/nextjs-15-error-handling-errortsx-server-actions-and-sentry-2026-16jm",
+      "titulo": "Next.js 15 Error Handling: error.tsx, Server Actions, and Sentry (2026)",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://dev.to/debojitdas2003/how-to-fix-react-native-eas-build-white-screens-and-ota-crashes-a-complete-guide-2e9n",
+      "titulo": "How to Fix React Native EAS Build White Screens and OTA Crashes (A Complete Guide)",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://dev.to/diven_rastdus_c5af27d68f3/4-ways-revenuecat-silently-denies-paying-users-their-entitlements-3d6e",
+      "titulo": "4 Ways RevenueCat Silently Denies Paying Users Their Entitlements",
+      "data": "18/06/2026"
+    },
+    {
+      "link": "https://dev.to/debojitdas2003/local-builds-vs-eas-cloud-when-to-use-which-345l",
+      "titulo": "Local Builds vs. EAS Cloud: When to Use Which?",
+      "data": "18/06/2026"
     }
   ]
 }
