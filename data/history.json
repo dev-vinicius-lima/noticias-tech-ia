@@ -899,6 +899,46 @@
       "link": "https://dev.to/expo/kotlin-compiler-plugin-cuts-android-startup-time-by-30-in-expo-sdk-56-2nje",
       "titulo": "Kotlin Compiler Plugin Cuts Android Startup Time by 30% in Expo SDK 56",
       "data": "19/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/unpatchable-usbliter8-exploit-breaks.html",
+      "titulo": "Unpatchable 'usbliter8' Exploit Breaks Apple A12 and A13 SecureROM Boot Chain",
+      "data": "21/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisa-warns-fortinet-customers-as.html",
+      "titulo": "CISA Warns Fortinet Customers as FortiBleed Hits 86,644 FortiGate Devices",
+      "data": "21/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/microsoft-links-mastra-ai-supply-chain-attack-to-north-korean-hackers/",
+      "titulo": "Microsoft links Mastra AI supply chain attack to North Korean hackers",
+      "data": "21/06/2026"
+    },
+    {
+      "link": "https://dev.to/jatniel/typescript-7-rc-the-compiler-rewritten-in-go-around-10x-faster-1mfg",
+      "titulo": "TypeScript 7 RC: the compiler rewritten in Go, around 10x faster",
+      "data": "21/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-devops-agent-adds-release-management-capabilities-to-assess-code-changes-before-production-preview/",
+      "titulo": "AWS DevOps Agent adds release management capabilities to assess code changes before production (preview)",
+      "data": "21/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-security-agent-adds-threat-modeling-kiro-power-and-claude-code-plugin-and-more/",
+      "titulo": "AWS Security Agent adds threat modeling, Kiro power and Claude Code plugin, and more",
+      "data": "21/06/2026"
+    },
+    {
+      "link": "https://dev.to/expo/native-ui-components-from-one-import-expo-ui-is-production-ready-n0k",
+      "titulo": "Native UI Components from One Import: Expo UI is Production-Ready",
+      "data": "21/06/2026"
+    },
+    {
+      "link": "https://dev.to/diven_rastdus_c5af27d68f3/my-expo-device-tests-could-break-without-ci-noticing-here-is-the-fix-m48",
+      "titulo": "My Expo Device Tests Could Break Without CI Noticing. Here Is the Fix.",
+      "data": "21/06/2026"
     }
   ]
 }
