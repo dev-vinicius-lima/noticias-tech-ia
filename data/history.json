@@ -939,6 +939,46 @@
       "link": "https://dev.to/diven_rastdus_c5af27d68f3/my-expo-device-tests-could-break-without-ci-noticing-here-is-the-fix-m48",
       "titulo": "My Expo Device Tests Could Break Without CI Noticing. Here Is the Fix.",
       "data": "21/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/29-year-old-squid-proxy-bug-squidbleed.html",
+      "titulo": "29-Year-Old Squid Proxy Bug 'Squidbleed' Can Leak Cleartext HTTP Requests",
+      "data": "23/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/ffmpeg-fixes-pixelsmash-flaw-in-widely-used-video-decoder/",
+      "titulo": "FFmpeg fixes PixelSmash flaw in widely used video decoder",
+      "data": "23/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/microsoft-fixes-autogen-studio-flaw-that-enabled-code-execution/",
+      "titulo": "Microsoft fixes AutoGen Studio flaw that enabled code execution",
+      "data": "23/06/2026"
+    },
+    {
+      "link": "https://dev.to/ahmet_gedik778845/benchmarking-bun-and-node-for-a-high-throughput-video-metadata-api-2fma",
+      "titulo": "Benchmarking Bun and Node for a High-Throughput Video Metadata API",
+      "data": "23/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/run-isolated-sandboxes-with-full-lifecycle-control-aws-lambda-introduces-microvms/",
+      "titulo": "Run isolated sandboxes with full lifecycle control: AWS Lambda introduces MicroVMs",
+      "data": "23/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-ny-summit-recap-local-zone-in-hanoi-grok-4-3-in-bedrock-price-reductions-and-more-june-22-2026/",
+      "titulo": "AWS Weekly Roundup: NY Summit recap, Local Zone in Hanoi, Grok 4.3 in Bedrock, price reductions, and more (June 22, 2026)",
+      "data": "23/06/2026"
+    },
+    {
+      "link": "https://dev.to/expo/skip-recompiling-70-ios-packages-on-every-build-27a6",
+      "titulo": "Skip Recompiling 70+ iOS Packages on Every Build",
+      "data": "23/06/2026"
+    },
+    {
+      "link": "https://dev.to/vikrantnegi/six-lines-zero-api-calls-running-llms-on-device-in-react-native-3ahl",
+      "titulo": "Six Lines, Zero API Calls: Running LLMs On-Device in React Native",
+      "data": "23/06/2026"
     }
   ]
 }
