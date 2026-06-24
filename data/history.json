@@ -979,6 +979,41 @@
       "link": "https://dev.to/vikrantnegi/six-lines-zero-api-calls-running-llms-on-device-in-react-native-3ahl",
       "titulo": "Six Lines, Zero API Calls: Running LLMs On-Device in React Native",
       "data": "23/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisco-unified-cm-flaw-exploited-after.html",
+      "titulo": "Cisco Unified CM Flaw Exploited After PoC Reveals File-Write Path to Root",
+      "data": "24/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/fortibleed-targeted-fortigate-firewalls.html",
+      "titulo": "FortiBleed Targeted FortiGate Firewalls in 110 Million-Credential Harvesting Operation",
+      "data": "24/06/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/proactively-reduce-tech-debt-autonomously-with-aws-transform-continuous-modernization-preview/",
+      "titulo": "Proactively reduce tech debt autonomously with AWS Transform – continuous modernization (preview)",
+      "data": "24/06/2026"
+    },
+    {
+      "link": "https://dev.to/piya__c204c9e90/typescript-70-vs-60-should-you-upgrade-now-or-wait-until-stable-6a7",
+      "titulo": "TypeScript 7.0 vs 6.0: Should You Upgrade Now or Wait Until Stable?",
+      "data": "24/06/2026"
+    },
+    {
+      "link": "https://dev.to/securitystefan/owasp-secure-coding-checklist-for-node-express-apis-2026-1505",
+      "titulo": "OWASP Secure Coding Checklist for Node Express APIs 2026",
+      "data": "24/06/2026"
+    },
+    {
+      "link": "https://dev.to/expo/what-expo-shipped-in-2026-new-performance-tools-and-ai-integrations-3i2m",
+      "titulo": "What Expo shipped in 2026: New performance tools and AI integrations",
+      "data": "24/06/2026"
+    },
+    {
+      "link": "https://dev.to/claudeguide/claude-code-react-native-mobile-app-development-guide-2026-49nn",
+      "titulo": "Claude Code React Native Mobile App Development Guide (2026)",
+      "data": "24/06/2026"
     }
   ]
 }
