@@ -1014,6 +1014,46 @@
       "link": "https://dev.to/claudeguide/claude-code-react-native-mobile-app-development-guide-2026-49nn",
       "titulo": "Claude Code React Native Mobile App Development Guide (2026)",
       "data": "24/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisco-catalyst-sd-wan-zero-day-cve-2026.html",
+      "titulo": "Cisco Catalyst SD-WAN Zero-Day CVE-2026-20245 Exploited to Gain Root Access",
+      "data": "25/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cisa-warns-critical-lantronix-eds5000.html",
+      "titulo": "CISA Warns Critical Lantronix EDS5000 Flaw Is Being Actively Exploited",
+      "data": "25/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/cordyceps-cicd-flaws-expose-300-github.html",
+      "titulo": "Cordyceps CI/CD Flaws Expose 300+ GitHub Repositories to Supply-Chain Attacks",
+      "data": "25/06/2026"
+    },
+    {
+      "link": "https://dev.to/frank_signorini/nodejs-2640-the-one-feature-that-actually-matters-2l32",
+      "titulo": "Node.js 26.4.0: The One Feature That Actually Matters",
+      "data": "25/06/2026"
+    },
+    {
+      "link": "https://dev.to/techpotions/deno-desktop-the-runtime-that-eats-electrons-lunch-2306",
+      "titulo": "Deno Desktop: The Runtime That Eats Electron's Lunch",
+      "data": "25/06/2026"
+    },
+    {
+      "link": "https://dev.to/mongodb/advanced-api-authentication-strategies-with-nodejs-and-mongodb-part-1-5die",
+      "titulo": "Advanced API Authentication Strategies with Node.js and MongoDB (Part 1)",
+      "data": "25/06/2026"
+    },
+    {
+      "link": "https://dev.to/russel_dsouza_bd584a3cb2a/stop-reinventing-auth-in-react-native-2in2",
+      "titulo": "Stop Reinventing Auth in React Native",
+      "data": "25/06/2026"
+    },
+    {
+      "link": "https://dev.to/diven_rastdus_c5af27d68f3/my-superwall-paywall-showed-blank-prices-on-cold-start-two-bugs-one-was-a-default-7kc",
+      "titulo": "My Superwall Paywall Showed Blank Prices on Cold Start. Two Bugs, One Was a Default.",
+      "data": "25/06/2026"
     }
   ]
 }
