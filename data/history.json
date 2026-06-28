@@ -1054,6 +1054,66 @@
       "link": "https://dev.to/diven_rastdus_c5af27d68f3/my-superwall-paywall-showed-blank-prices-on-cold-start-two-bugs-one-was-a-default-7kc",
       "titulo": "My Superwall Paywall Showed Blank Prices on Cold Start. Two Bugs, One Was a Default.",
       "data": "25/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/new-linux-pedit-cow-exploit-enables.html",
+      "titulo": "New Linux pedit COW Exploit Enables Root Access by Poisoning Cached Binaries",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-sets-urgent-deadline-to-fix-cisco-flaw-exploited-in-attacks/",
+      "titulo": "CISA sets urgent deadline to fix Cisco flaw exploited in attacks",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/amazon-q-developer-flaw-could-let.html",
+      "titulo": "Amazon Q Developer Flaw Could Let Malicious Repos Run Code via MCP Configs",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://dev.to/iurii_rogulia/postgresql-production-checklist-uuids-rls-indexes-pooling-2dfl",
+      "titulo": "PostgreSQL Production Checklist: UUIDs, RLS, Indexes, Pooling",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://dev.to/frank_signorini/github-copilots-agentic-harness-what-the-latest-evaluation-means-for-developers-lam",
+      "titulo": "GitHub Copilot's Agentic Harness: What the Latest Evaluation Means for Developers",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://dev.to/aon_infotech_3a1b6ff525fc/building-a-type-safe-api-layer-in-nextjs-app-router-with-zod-and-server-actions-ma2",
+      "titulo": "Building a Type-Safe API Layer in Next.js App Router With Zod and Server Actions",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://dev.to/expo/what-expos-series-b-funding-means-for-you-fm5",
+      "titulo": "What Expo’s Series B funding means for you",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://dev.it/dev/expo/the-real-cost-of-react-native-animations-benchmarking-every-approach-3bej",
+      "titulo": "",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://dev.to/russel_dsouza_bd584a3cb2a/react-native-ai-app-cost-in-2026-acn",
+      "titulo": "React Native AI app cost in 2026",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/06/openai-limits-gpt-56-rollout-as-sol.html",
+      "titulo": "OpenAI Previews GPT-5.6 Sol With Restricted Access and Stronger Cyber Safeguards",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-is-testing-desktop-like-claude-cowork-for-mobile/",
+      "titulo": "Anthropic is testing desktop-like Claude Cowork for mobile",
+      "data": "28/06/2026"
+    },
+    {
+      "link": "https://dev.to/resk/building-a-bitmask-based-llm-security-firewall-with-resksecure-3oep",
+      "titulo": "Building a Bitmask-Based LLM Security Firewall with reskSecure",
+      "data": "28/06/2026"
     }
   ]
 }
