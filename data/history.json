@@ -1114,6 +1114,51 @@
       "link": "https://dev.to/resk/building-a-bitmask-based-llm-security-firewall-with-resksecure-3oep",
       "titulo": "Building a Bitmask-Based LLM Security Firewall with reskSecure",
       "data": "28/06/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/citrix-patches-six-netscaler-flaws.html",
+      "titulo": "Citrix Patches Six NetScaler Flaws Allowing File Read and Denial-of-Service",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/adobe-patches-seven-max-severity-coldfusion-campaign-flaws/",
+      "titulo": "Adobe patches seven max severity ColdFusion, Campaign flaws",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/phantom-squatting-uses-ai-hallucinated.html",
+      "titulo": "Phantom Squatting Uses AI-Hallucinated Domains for Phishing and Malware",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://dev.to/ykpraveen/redis-8-in-practice-building-a-full-stack-movie-library-with-search-json-time-series-and-real-api-workloads-3ano",
+      "titulo": "",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/06/30/Rust-1.96.1/",
+      "titulo": "Announcing Rust 1.96.1",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/accelerate-your-infrastructure-deployments-by-up-to-4x-with-aws-cloudformation-express-mode/",
+      "titulo": "Accelerate your infrastructure deployments by up to 4x with AWS CloudFormation Express mode",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://dev.to/russel_dsouza_bd584a3cb2a/mobile-app-security-best-practices-in-2026-d0e",
+      "titulo": "Mobile App Security Best Practices in 2026",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://dev.to/gtstudios/deep-links-and-universal-links-in-expo-complete-guide-1ok8",
+      "titulo": "Deep Links and Universal Links in Expo: Complete Guide",
+      "data": "01/07/2026"
+    },
+    {
+      "link": "https://dev.to/janmejaisingh/expo-router-vs-react-navigation-which-one-should-you-use-in-2026-d70",
+      "titulo": "Expo Router vs React Navigation - Which One Should You Use in 2026?",
+      "data": "01/07/2026"
     }
   ]
 }
