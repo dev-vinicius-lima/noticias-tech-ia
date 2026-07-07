@@ -1159,6 +1159,51 @@
       "link": "https://dev.to/janmejaisingh/expo-router-vs-react-navigation-which-one-should-you-use-in-2026-d70",
       "titulo": "Expo Router vs React Navigation - Which One Should You Use in 2026?",
       "data": "01/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
+      "titulo": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/16-year-old-linux-kvm-flaw-lets-guest.html",
+      "titulo": "16-Year-Old Linux KVM Flaw Lets Guest VMs Escape to Host on Intel and AMD x86 Systems",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/certcc-warns-of-hidden-admin-backdoor.html",
+      "titulo": "CERT/CC Warns of Hidden Admin Backdoor in Tenda Router Firmware",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://dev.to/frank_signorini/turbopack-in-nextjs-163-a-game-changer-for-development-speed-9ec",
+      "titulo": "Turbopack in Next.js 16.3: A Game Changer for Development Speed",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://dev.to/watilde/a-canary-that-re-benchmarks-npm-pnpm-yarn-and-dep-every-time-one-of-them-ships-18gj",
+      "titulo": "A canary that re-benchmarks npm, pnpm, yarn, and dep every time one of them ships",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://dev.to/vuong_ngo/prompt-injection-in-assistant-tools-is-a-boundary-bug-3pnh",
+      "titulo": "Prompt Injection in Assistant Tools Is a Boundary Bug",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://dev.to/expo/build-an-ai-qa-agent-for-expo-apps-with-eas-workflows-in-minutes-today-13nb",
+      "titulo": "Build an AI QA Agent for Expo Apps with EAS Workflows in minutes today",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://dev.to/jules_sarah_0718e958f0d24/mobile-app-analytics-in-react-native-what-to-track-in-2026-1393",
+      "titulo": "Mobile App Analytics in React Native — What to Track in 2026",
+      "data": "07/07/2026"
+    },
+    {
+      "link": "https://dev.to/russel_dsouza_bd584a3cb2a/stop-reinventing-react-native-auth-buy-a-template-4h9n",
+      "titulo": "Stop Reinventing React Native Auth — Buy a Template",
+      "data": "07/07/2026"
     }
   ]
 }
