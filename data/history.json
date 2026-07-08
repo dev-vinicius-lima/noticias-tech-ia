@@ -1204,6 +1204,46 @@
       "link": "https://dev.to/russel_dsouza_bd584a3cb2a/stop-reinventing-react-native-auth-buy-a-template-4h9n",
       "titulo": "Stop Reinventing React Native Auth — Buy a Template",
       "data": "07/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/15-year-old-ghostlock-flaw-enables-root.html",
+      "titulo": "15-Year-Old GhostLock Flaw Enables Root and Container Escape on Most Linux Distros",
+      "data": "08/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/cisa-adds-4-actively-exploited-adobe.html",
+      "titulo": "CISA Adds 4 Actively Exploited Adobe, Joomla, and Langflow Flaws to KEV",
+      "data": "08/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/ubiquiti-warns-of-new-max-severity-unifi-os-vulnerability/",
+      "titulo": "Ubiquiti warns of new max severity UniFi OS vulnerability",
+      "data": "08/07/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/amazon-ec2-c9g-and-c9gd-instances-powered-by-aws-graviton5-processors-are-now-available/",
+      "titulo": "Amazon EC2 C9g and C9gd instances powered by AWS Graviton5 processors are now available",
+      "data": "08/07/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/automate-public-tls-certificate-issuance-with-acme-support-in-aws-certificate-manager/",
+      "titulo": "Automate public TLS certificate issuance with ACME support in AWS Certificate Manager",
+      "data": "08/07/2026"
+    },
+    {
+      "link": "https://dev.to/frank_signorini/cloudflares-monetization-gateway-a-game-changer-for-developers-1dkb",
+      "titulo": "Cloudflare's Monetization Gateway: A Game-Changer for Developers",
+      "data": "08/07/2026"
+    },
+    {
+      "link": "https://dev.to/russel_dsouza_bd584a3cb2a/buy-a-react-native-template-or-build-from-scratch-in-2026-j93",
+      "titulo": "Buy a React Native Template or Build From Scratch in 2026?",
+      "data": "08/07/2026"
+    },
+    {
+      "link": "https://dev.to/gtstudios/how-to-structure-a-react-native-app-as-a-solo-developer-3bb6",
+      "titulo": "How to Structure a React Native App as a Solo Developer",
+      "data": "08/07/2026"
     }
   ]
 }
