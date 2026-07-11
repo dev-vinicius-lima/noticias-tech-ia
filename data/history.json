@@ -1244,6 +1244,31 @@
       "link": "https://dev.to/gtstudios/how-to-structure-a-react-native-app-as-a-solo-developer-3bb6",
       "titulo": "How to Structure a React Native App as a Solo Developer",
       "data": "08/07/2026"
+    },
+    {
+      "link": "https://dev.to/frank_signorini/nodejs-2650-enhancing-performance-and-security-oi1",
+      "titulo": "Node.js 26.5.0: Enhancing Performance and Security",
+      "data": "11/07/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/07/09/Rust-1.97.0/",
+      "titulo": "Announcing Rust 1.97.0",
+      "data": "11/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
+      "titulo": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
+      "data": "11/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/injective-labs-github-compromise-pushes.html",
+      "titulo": "Injective Labs GitHub Compromise Pushes Wallet-Key-Stealing npm Packages",
+      "data": "11/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
+      "titulo": "Six New U-Boot Flaws Could Let Malicious Images Crash Devices or Run Code at Boot",
+      "data": "11/07/2026"
     }
   ]
 }
