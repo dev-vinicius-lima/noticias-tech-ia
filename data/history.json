@@ -1269,6 +1269,46 @@
       "link": "https://thehackernews.com/2026/07/six-new-u-boot-flaws-could-let.html",
       "titulo": "Six New U-Boot Flaws Could Let Malicious Images Crash Devices or Run Code at Boot",
       "data": "11/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/compromised-jscrambler-8140-npm-release.html",
+      "titulo": "Compromised jscrambler 8.14.0 npm Release Drops Rust Infostealer During Install",
+      "data": "12/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/laser-attack-resets-tangem-wallet.html",
+      "titulo": "Laser Attack Resets Tangem Wallet Passwords on Cards That Can't Be Patched",
+      "data": "12/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/new-u-boot-flaws-could-enable-stealthy-firmware-attacks/",
+      "titulo": "New U-Boot flaws could enable stealthy firmware attacks",
+      "data": "12/07/2026"
+    },
+    {
+      "link": "https://dev.to/frank_signorini/multigres-v01-alpha-a-game-changer-for-postgres-scaling-36af",
+      "titulo": "Multigres v0.1 Alpha: A Game-Changer for Postgres Scaling",
+      "data": "12/07/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/upgrade-amazon-eks-clusters-with-confidence-using-kubernetes-version-rollbacks/",
+      "titulo": "Upgrade Amazon EKS clusters with confidence using Kubernetes version rollbacks",
+      "data": "12/07/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-sonnet-5-on-aws-amazon-workspaces-for-ai-agents-aws-service-availability-updates-and-more-july-6-2026/",
+      "titulo": "AWS Weekly Roundup: Claude Sonnet 5 on AWS, Amazon WorkSpaces for AI agents, AWS service availability updates, and more (July 6, 2026)",
+      "data": "12/07/2026"
+    },
+    {
+      "link": "https://dev.to/pykero/is-expo-production-ready-in-2026-2f1k",
+      "titulo": "Is Expo production-ready in 2026?",
+      "data": "12/07/2026"
+    },
+    {
+      "link": "https://dev.to/mohammad_umer_5c02ca3a796/android-16kb-play-store-rejection-in-react-native-expo-how-i-finally-fixed-it-5916",
+      "titulo": "Android 16KB Play Store Rejection in React Native + Expo: How I Finally Fixed It",
+      "data": "12/07/2026"
     }
   ]
 }
