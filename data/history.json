@@ -1344,6 +1344,41 @@
       "link": "https://dev.to/hugo_rus_630dd942fcf7cc62/what-indie-react-native-devs-say-about-eas-90-days-in-k8h",
       "titulo": "What Indie React Native Devs Say About EAS 90 Days In",
       "data": "14/07/2026"
+    },
+    {
+      "link": "https://dev.to/microsoft/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/microsoft-july-2026-patch-tuesday-fixes-massive-570-flaws-3-zero-days/",
+      "titulo": "",
+      "data": "15/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/cursor-flaw-lets-malicious-cloned.html",
+      "titulo": "Cursor Flaw Lets Malicious Cloned Repositories Trigger Windows Code Execution",
+      "data": "15/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/sap-patches-cvss-99-netweaver-abap-flaw.html",
+      "titulo": "SAP Patches CVSS 9.9 NetWeaver ABAP Flaw That Could Expose or Modify Data",
+      "data": "15/07/2026"
+    },
+    {
+      "link": "https://dev.to/frank_signorini/turbopack-in-nextjs-163-a-game-changer-for-development-speed-4875",
+      "titulo": "Turbopack in Next.js 16.3: A Game Changer for Development Speed",
+      "data": "15/07/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/07/13/crates-io-development-update/",
+      "titulo": "crates.io: development update",
+      "data": "15/07/2026"
+    },
+    {
+      "link": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentic-cx-designer-for-amazon-connect-customer-ec2-ami-watermarks-open-governance-for-mysql-and-more-june-29-2026/",
+      "titulo": "AWS Weekly Roundup: Agentic CX designer for Amazon Connect Customer, EC2 AMI Watermarks, Open Governance for MySQL, and more (June 29, 2026)",
+      "data": "15/07/2026"
+    },
+    {
+      "link": "https://dev.to/imcitizen13/my-iphone-16-pro-stuttered-but-the-s24-felt-smoother-a-react-native-skia-hunt-2n51",
+      "titulo": "My iPhone 16 Pro Stuttered but the S24 Felt Smoother: A React Native Skia Hunt",
+      "data": "15/07/2026"
     }
   ]
 }
