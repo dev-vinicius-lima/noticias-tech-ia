@@ -1409,6 +1409,31 @@
       "link": "https://dev.to/hugo_rus_630dd942f7cc62/deep-linking-in-react-native-was-miserable-expo-router-made-it-accidental-1ndc",
       "titulo": "",
       "data": "16/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/microsoft/windows-server-2022-reach-end-of-mainstream-support-in-90-days/",
+      "titulo": "Windows Server 2022 reach end of mainstream support in 90 days",
+      "data": "18/07/2026"
+    },
+    {
+      "link": "https://blog.rust-lang.org/2026/07/16/Rust-1.97.1/",
+      "titulo": "Announcing Rust 1.97.1",
+      "data": "18/07/2026"
+    },
+    {
+      "link": "https://dev.to/lettstartdesign-official/nextjs-16-react-192-features-breaking-changes-and-how-to-upgrade-494a",
+      "titulo": "Next.js 16: React 19.2 Features, Breaking Changes, and How to Upgrade",
+      "data": "18/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/hollowbyte-ddos-flaw-bloats-openssl-server-memory-with-11-byte-payload/",
+      "titulo": "HollowByte DDoS flaw bloats OpenSSL server memory with 11-byte payload",
+      "data": "18/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-warns-feds-to-patch-exploited-fortinet-fortisandbox-flaws-by-sunday/",
+      "titulo": "CISA urges immediate action on actively exploited Fortinet flaws",
+      "data": "18/07/2026"
     }
   ]
 }
