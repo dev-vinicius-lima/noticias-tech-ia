@@ -1474,6 +1474,41 @@
       "link": "https://dev.to/hugo_rus_630dd942fcf7cc62/how-to-build-a-video-calling-app-with-react-native-and-webrtc-44jd",
       "titulo": "How to Build a Video Calling App with React Native and WebRTC",
       "data": "19/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/critical-nginx-vulnerability-can-crash.html",
+      "titulo": "Critical NGINX Vulnerability Can Crash Workers and May Allow Remote Code Execution",
+      "data": "20/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/hugging-face-breach-autonomous-ai-agent-system-internal-datasets-credentials/",
+      "titulo": "Hugging Face discloses breach linked to autonomous AI agent",
+      "data": "20/07/2026"
+    },
+    {
+      "link": "https://thehackernews.com/2026/07/new-7-zip-vulnerability-could-let.html",
+      "titulo": "New 7-Zip Vulnerability Could Let Crafted XZ Archives Run Code During Extraction",
+      "data": "20/07/2026"
+    },
+    {
+      "link": "https://dev.to/digitaldev/vite-spa-vs-nextjs-ssr-real-performance-differences-after-migration-with-benchmarks-2aac",
+      "titulo": "Vite SPA vs Next.js SSR: Real Performance Differences After Migration (With Benchmarks)",
+      "data": "20/07/2026"
+    },
+    {
+      "link": "https://dev.to/akari_iku/is-typescript-7-ready-5x-faster-but-astro-and-vue-say-wait-3apk",
+      "titulo": "Is TypeScript 7 Ready? 5x Faster, but Astro and Vue Say Wait",
+      "data": "20/07/2026"
+    },
+    {
+      "link": "https://dev.to/astraedus/nextjs-in-2026-the-5-features-that-change-how-you-ship-and-2-still-missing-415j",
+      "titulo": "Next.js in 2026: The 5 Features That Change How You Ship (And 2 Still Missing)",
+      "data": "20/07/2026"
+    },
+    {
+      "link": "https://dev.to/famitha_ma_b9c13ab1d324e/how-to-build-a-grocery-delivery-app-with-react-native-expo-2026-f2d",
+      "titulo": "How to Build a Grocery Delivery App with React Native + Expo (2026)",
+      "data": "20/07/2026"
     }
   ]
 }
