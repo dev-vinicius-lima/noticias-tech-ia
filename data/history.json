@@ -1544,6 +1544,41 @@
       "link": "https://dev.to/naderalfakesh/i-rebuilt-my-2021-react-native-image-gallery-in-2026-every-library-i-used-is-dead-4ffl",
       "titulo": "I rebuilt my 2021 React Native image gallery in 2026 — every library I used is dead",
       "data": "21/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/cisa-orders-feds-to-patch-actively-exploited-langflow-rce-flaw/",
+      "titulo": "CISA orders urgent action on actively exploited Langflow RCE flaw",
+      "data": "22/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/microsoft/microsoft-exchange-2016-and-2019-esu-program-ends-in-october/",
+      "titulo": "Microsoft to stop Exchange 2016 / 2019 security updates in October",
+      "data": "22/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/fakegit-campaign-uses-7-600-github-repos-to-push-smartloader-malware/",
+      "titulo": "FakeGit campaign uses 7,600 GitHub repos to push SmartLoader malware",
+      "data": "22/07/2026"
+    },
+    {
+      "link": "https://dev.to/stacknotice/react-router-v7-complete-guide-2026-framework-mode-loaders-actions-5f7a",
+      "titulo": "React Router v7 Complete Guide (2026): Framework Mode, Loaders & Actions",
+      "data": "22/07/2026"
+    },
+    {
+      "link": "https://dev.to/jtorchia/deepseek-api-in-typescript-secure-integration-and-honest-model-evaluation-for-code-4m90",
+      "titulo": "DeepSeek API in TypeScript: secure integration and honest model evaluation for code",
+      "data": "22/07/2026"
+    },
+    {
+      "link": "https://dev.to/angel_rose/the-designers-checklist-for-react-native-ota-updates-2dag",
+      "titulo": "The Designer's Checklist for React Native OTA Updates",
+      "data": "22/07/2026"
+    },
+    {
+      "link": "https://dev.to/hokagedemehin/light-dark-and-system-themes-in-expo-nativewind-the-whole-app-from-one-setting-566i",
+      "titulo": "Light, dark, and system themes in Expo + NativeWind — the whole app, from one setting",
+      "data": "22/07/2026"
     }
   ]
 }
