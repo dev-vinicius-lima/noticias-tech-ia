@@ -1579,6 +1579,41 @@
       "link": "https://dev.to/hokagedemehin/light-dark-and-system-themes-in-expo-nativewind-the-whole-app-from-one-setting-566i",
       "titulo": "Light, dark, and system themes in Expo + NativeWind — the whole app, from one setting",
       "data": "22/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/linux/new-refluxfs-linux-flaw-lets-attackers-gain-root-privileges/",
+      "titulo": "New RefluXFS Linux flaw lets attackers gain root privileges",
+      "data": "23/07/2026"
+    },
+    {
+      "link": "https://www.bleepingcomputer.com/news/security/check-point-patches-smartconsole-zero-day-exploited-in-attacks/",
+      "titulo": "Check Point warns of SmartConsole zero-day exploited in attacks",
+      "data": "23/07/2026"
+    },
+    {
+      "link": "https://dev.to/ubuntu-snap-confine-flaw-could-give-local-users-root-on-default-desktop-installs-7",
+      "titulo": "",
+      "data": "23/07/2026"
+    },
+    {
+      "link": "https://dev.to/parsajiravand/youve-been-doing-set-math-by-hand-javascript-finally-shipped-union-intersection-and-476",
+      "titulo": "You've been doing Set math by hand. JavaScript finally shipped `.union()`, `.intersection()`, and friends.",
+      "data": "23/07/2026"
+    },
+    {
+      "link": "https://dev.to/stacknotice/playwright-complete-guide-e2e-testing-in-2026-18m3",
+      "titulo": "Playwright Complete Guide: E2E Testing in 2026",
+      "data": "23/07/2026"
+    },
+    {
+      "link": "https://dev.to/expo/how-hipcamp-upgraded-expo-sdk-versions-with-claude-code-4jb0",
+      "titulo": "How Hipcamp upgraded Expo SDK versions with Claude Code",
+      "data": "23/07/2026"
+    },
+    {
+      "link": "https://dev.to/stacknotice/expo-react-native-complete-guide-for-web-developers-2026-12me",
+      "titulo": "Expo & React Native Complete Guide for Web Developers (2026)",
+      "data": "23/07/2026"
     }
   ]
 }
